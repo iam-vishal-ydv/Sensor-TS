@@ -1,4 +1,4 @@
-import { useState } from 'react'
+ import {NavBar} from "./Components/Header/NavBar"
 
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-     <h1 className=" text-white bg-black ">App</h1>
+     <NavBar/>
     </>
   )
 }
