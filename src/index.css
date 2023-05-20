@@ -1,3 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Patrick+Hand&family=Poppins:wght@100&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+/* Footer style */
+
+.main{
+    padding: 2% 5%;
+}
+.bottom{
+    padding: 1% 5%;
+}
+.main_heading{
+    font-size: 28px;
+    font-weight: 500;
+    border-bottom: .2px solid lightgray !important;
+    
+}
+
+.main_heading2{
+    font-size: 28px;
+    *font-weight: 400;
+    border-bottom: .2px solid  lightgray;
+    
+    color: lightgray;
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+}
+
+.address span{
+    padding: 1% 0;
+}
+
+.second{
+    border-top: 1px solid lightgray;
+    
+}
+
+.icons{
+    display: flex;
+}
+
+.fs_20{
+    font-size: 20px !important;
+    color: lightgray;
+}
+
+.r-border{
+    border-radius: 100%;
+}
+.text_gray{
+ color: lightgray;
+ display: flex;
+ align-items: center;
+}
