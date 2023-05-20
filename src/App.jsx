@@ -1,4 +1,5 @@
  import {NavBar} from "./Components/Header/NavBar"
+import { Slider } from "./Components/Slider/Slider"
 
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
   return (
     <>
      <NavBar/>
+     <Slider/>
     </>
   )
 }
