@@ -15,11 +15,11 @@ export default function Footer() {
     <div className='main bg-gray-900  '> 
     <Grid container className='text-white py-4'>
       <Grid item md={4} className='px-2'>
-        <div className='main_heading py-3 text-green-700'>Sensor</div>
+        <div className='main_heading py-3 text-green-700'>Sensor Tech Solution</div>
         <div className='py-3 address'>
-        <span className='text-gray-400'><LocationOnIcon/><span>J-block Sec-22 Noida</span></span>
-        <span className='text-gray-400'><LocalPhoneIcon/><span>+91-2545859563</span></span>
-        <span className='text-gray-400'><EmailIcon/><span>test@gmail.com</span></span>
+        <span className='text-gray-400'><LocationOnIcon/> <span>Address</span></span>
+        <span className='text-gray-400'><LocalPhoneIcon/> <span>+91 9310306603</span></span>
+        <span className='text-gray-400'><EmailIcon/> <span> sales.sensortechsolution@gmail.com</span></span>
         </div>
       </Grid>
       <Grid item md={4} className='px-2'>
@@ -53,7 +53,7 @@ export default function Footer() {
     </Grid>
     </div>
     <Grid container className='bg-gray-950 bottom'>
-     <span className='text_gray'>Copyright &nbsp; <BiCopyright/> &nbsp;2023 Sensor </span>
+     <span className='text_gray'>Copyright &nbsp; <BiCopyright/> &nbsp;2023 Sensor Tech Solutions </span>
     </Grid>
     </>
   )
