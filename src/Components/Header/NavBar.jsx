@@ -38,7 +38,7 @@ export const NavBar = () => {
     <>
       <div className="flex z-50  justify-around items-center w-full h-20 px-4 text-black bg-gray-100 fixed">
         <div>
-          <h1 className='text-xl text-black font-bold'> Sensor TS</h1>
+          <h1 className='text-xl text-black font-bold'> Sensor Tech Solutions</h1>
         </div>
 
         <ul className="hidden md:flex">
