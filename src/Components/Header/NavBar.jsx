@@ -19,7 +19,7 @@ export const NavBar = () => {
     { 
     
       id:2,
-      links:"/about",
+      links:"/Sensor-TS/about",
       name:"About Us"
     },
     { 
@@ -31,7 +31,7 @@ export const NavBar = () => {
     { 
     
       id:4,
-      links:"Contact Us",
+      links:"/Sensor-TS/contact",
       name:'Contact Us'
     }
     ]
@@ -40,9 +40,9 @@ export const NavBar = () => {
 
   return (
     <>
-      <div className="flex z-50  justify-around items-center w-full h-20 px-4 text-black bg-gray-100 fixed">
+      <div className="flex z-50  justify-around items-center w-full h-20 px-4 text-black bg-gray-100 sticky top-0">
         <div>
-          <h1 className='text-xl text-black font-bold pointer' onClick={()=>navigate('/')}> Sensor Tech Solutions</h1>
+          <h1 className='text-xl text-black font-bold pointer' onClick={()=>navigate('/Sensor-TS/')}> Sensor Tech Solutions</h1>
         </div>
 
         <ul className="hidden md:flex">

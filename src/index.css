@@ -92,6 +92,11 @@
     align-items: center;
 }
 
+.path{
+    display: flex;
+    align-items: center;
+}
+
 
 /* Home Style */
 
@@ -120,11 +125,34 @@
     text-align: justify;
 }
 
+/* Contact Style */
+
+.contact_container{
+    margin:10px 30%;
+}
+
+.btn{
+    background: black;
+    color: white;
+    border: 2px solid black;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.c_heading{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 @media only screen and (max-width: 600px) {
     .icons{
         justify-content: center !important;
     }
     .main_heading2{
         font-size: 24px;
+    }
+    .contact_container{
+        margin:10px 5%;
     }
   }
