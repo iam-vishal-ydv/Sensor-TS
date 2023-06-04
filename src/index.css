@@ -8,7 +8,7 @@
     font-family: 'Poppins', sans-serif !important;
 }
 
-.pointer{
+.pointer {
     cursor: pointer;
 }
 
@@ -16,82 +16,85 @@
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     background: #f1f1f1;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #888;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #555;
-  }
+}
 
 /* Footer style */
 
-.main{
+.main {
     padding: 2% 5%;
 }
-.bottom{
+
+.bottom {
     padding: 1% 5%;
 }
-.main_heading{
+
+.main_heading {
     font-size: 28px;
     font-weight: 500;
     border-bottom: .2px solid lightgray !important;
-    
+
 }
 
-.main_heading2{
+.main_heading2 {
     font-size: 28px;
     *font-weight: 400;
-    border-bottom: .2px solid  lightgray;
-    
+    border-bottom: .2px solid lightgray;
+
     color: lightgray;
 }
 
-.address{
+.address {
     display: flex;
     flex-direction: column;
 }
 
-.address span{
+.address span {
     padding: 1% 0;
 }
 
-.second{
+.second {
     border-top: 1px solid lightgray;
-    
+
 }
 
-.icons{
+.icons {
     display: flex;
 }
 
-.fs_20{
+.fs_20 {
     font-size: 20px !important;
     color: lightgray;
 }
 
-.r-border{
+.r-border {
     border-radius: 100%;
 }
-.text_gray{
- color: lightgray;
- display: flex;
- align-items: center;
+
+.text_gray {
+    color: lightgray;
+    display: flex;
+    align-items: center;
 }
 
 
 /* Home Style */
 
-.header{
+.header {
     *background: url('images/background.png');
     *background-size: cover;
     *background-repeat: no-repeat;
@@ -99,17 +102,17 @@
     height: 100vh;
 }
 
-.text_style{
+.text_style {
     font-size: 3.5rem;
     *font-weight: 500;
 }
 
-.text-div{
+.text-div {
     width: 70%;
     margin: 0 auto;
 }
 
-.description{
+.description {
     font-size: 1.5rem;
     font-weight: 500;
     color: white;

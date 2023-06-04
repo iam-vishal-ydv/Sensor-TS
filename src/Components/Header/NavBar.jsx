@@ -1,11 +1,11 @@
 import React,{useState} from 'react'
-import {Link} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 import { FaTimes } from 'react-icons/fa';
 import { FaBars } from 'react-icons/fa';
 
 
 export const NavBar = () => {
-
+  const navigate = useNavigate()
   const [navBar, setNavBar] = useState(false);
 
     const links=[
@@ -13,22 +13,26 @@ export const NavBar = () => {
     { 
     
       id:1,
-      links:"home"
+      links:"/Sensor-TS/",
+      name:"Home"
     },
     { 
     
       id:2,
-      links:"about"
+      links:"/about",
+      name:"About Us"
     },
     { 
     
       id:3,
-      links:"Our Products"
+      links:"Our Products",
+      name:'Our Products'
     },
     { 
     
       id:4,
-      links:"Contact Us"
+      links:"Contact Us",
+      name:'Contact Us'
     }
     ]
 
@@ -38,7 +42,7 @@ export const NavBar = () => {
     <>
       <div className="flex z-50  justify-around items-center w-full h-20 px-4 text-black bg-gray-100 fixed">
         <div>
-          <h1 className='text-xl text-black font-bold'> Sensor Tech Solutions</h1>
+          <h1 className='text-xl text-black font-bold pointer' onClick={()=>navigate('/')}> Sensor Tech Solutions</h1>
         </div>
 
         <ul className="hidden md:flex">
@@ -50,7 +54,7 @@ export const NavBar = () => {
             
             
             <li className="px-4 cursor-pointer capitalize font-medium text-gray-950 hover:scale-105 duration-200" key={item.id}>
-            <Link to={item.links} smooth duration={500}> {item.links}</Link> 
+            <Link to={item.links} smooth duration={500}> {item.name}</Link> 
           </li>
             
             )
