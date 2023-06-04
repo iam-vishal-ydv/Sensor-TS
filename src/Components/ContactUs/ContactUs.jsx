@@ -15,7 +15,7 @@ export default function ContactUs() {
                     <ContactFields/>
                 </Grid>
                 <Grid md={6} px={5} py={3} sm={12} xs={12}>
-                <img src='/images/Group.png' style={{margin:'0 auto'}}/>
+                <img src='images/Group.png' style={{margin:'0 auto'}}/>
                 </Grid>
             </Grid>
         </>
