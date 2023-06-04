@@ -84,7 +84,7 @@ export const NavBar = () => {
              return(
               
               <li className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200" key={item.id}>
-            <Link to={item.links} smooth duration={500} onClick={(()=>setNavBar(!navBar))}> {item.links}</Link> 
+            <Link to={item.links} smooth duration={500} onClick={(()=>setNavBar(!navBar))}> {item.name}</Link> 
             </li>
               
               )
