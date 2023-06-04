@@ -74,6 +74,7 @@
 
 .icons {
     display: flex;
+    *justify-content: center;
 }
 
 .fs_20 {
@@ -118,3 +119,12 @@
     color: white;
     text-align: justify;
 }
+
+@media only screen and (max-width: 600px) {
+    .icons{
+        justify-content: center !important;
+    }
+    .main_heading2{
+        font-size: 24px;
+    }
+  }

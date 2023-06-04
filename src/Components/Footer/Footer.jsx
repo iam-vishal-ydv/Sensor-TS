@@ -14,7 +14,7 @@ export default function Footer() {
     <>
     <div className='main bg-gray-900  '> 
     <Grid container className='text-white py-4'>
-      <Grid item md={4} className='px-2'>
+      <Grid item md={4} sm={12} xs={12} className='px-2'>
         <div className='main_heading py-3 text-green-700'>Sensor Tech Solution</div>
         <div className='py-3 address'>
         <span className='text-gray-400'><LocationOnIcon/> <span>Address</span></span>
@@ -22,7 +22,7 @@ export default function Footer() {
         <span className='text-gray-400'><EmailIcon/> <span> sales.sensortechsolution@gmail.com</span></span>
         </div>
       </Grid>
-      <Grid item md={4} className='px-2'>
+      <Grid item md={4} sm={6} xs={6} className='px-2'>
       <div className='main_heading2 py-3'>Products</div>
       <div className='py-3 address'>
         <span className='text-gray-400 pointer'><KeyboardDoubleArrowRightIcon/> Shirt</span>
@@ -33,7 +33,7 @@ export default function Footer() {
         <span className='text-gray-400 pointer'><KeyboardDoubleArrowRightIcon/> Belts</span>
         </div>
       </Grid>
-      <Grid item md={4} className='px-2'>
+      <Grid item md={4} sm={6} xs={6}className='px-2'>
       <div className='main_heading2 py-3'>Further Info</div>
       <div className='py-3 address'>
         <span className='text-gray-400 pointer'><KeyboardDoubleArrowRightIcon/> Home</span>
@@ -44,7 +44,7 @@ export default function Footer() {
       </Grid>
       </Grid>
     <Grid container className='second'>
-      <Grid item md={4} className='icons py-3'>
+      <Grid item md={4} sm={12} xs={12} className='icons py-3'>
         <a href='#' className='border r-border p-2'><AiFillInstagram  className='fs_20'/></a>
         <a href='#' className='border r-border p-2 ms-4'><BsFacebook className='fs_20'/></a>
         <a href='#' className='border r-border p-2 ms-4'><BsTwitter className='fs_20'/></a>
