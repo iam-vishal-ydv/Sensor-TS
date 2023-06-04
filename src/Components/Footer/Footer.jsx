@@ -17,8 +17,8 @@ export default function Footer() {
       <Grid item md={4} sm={12} xs={12} className='px-2'>
         <div className='main_heading py-3 text-green-700'>Sensor Tech Solution</div>
         <div className='py-3 address'>
-        <span className='text-gray-400'><LocationOnIcon/> <span>Address</span></span>
-        <span className='text-gray-400'><LocalPhoneIcon/> <span>+91 9310306603</span></span>
+        <span style={{display:'flex',alignItems:'center'}}><LocationOnIcon/> &nbsp;<span className='text-gray-400'> <span>Office No. 103, valik Cham bers,A-155, Vikas Marg, Shankarpur, Delhi-110092</span></span></span>
+        <span className='text-gray-400'><LocalPhoneIcon/> <span>+91-9310306603</span></span>
         <span className='text-gray-400'><EmailIcon/> <span> sales.sensortechsolution@gmail.com</span></span>
         </div>
       </Grid>
