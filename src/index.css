@@ -164,6 +164,17 @@
     background: rgb(12, 12, 12);
 }
 
+@media only screen and (max-width: 900px) {
+    .project_box{
+        width: 120px;
+        padding: 20px 0;
+        font-size: 18px;
+    }
+    .contact_container{
+        margin:10px 15%;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .icons{
         justify-content: center !important;
@@ -173,5 +184,10 @@
     }
     .contact_container{
         margin:10px 5%;
+    }
+    .project_box{
+        width: 100px;
+        padding: 15px 0;
+        font-size: 18px;
     }
   }
