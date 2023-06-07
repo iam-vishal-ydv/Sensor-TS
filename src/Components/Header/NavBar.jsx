@@ -25,8 +25,8 @@ export const NavBar = () => {
     { 
     
       id:3,
-      links:"Our Products",
-      name:'Our Products'
+      links:"/Sensor-TS/retail-projects",
+      name:'Retail Projects'
     },
     { 
     

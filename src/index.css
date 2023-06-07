@@ -145,6 +145,25 @@
     font-weight: 600;
 }
 
+/* Retail Project Style */
+
+.project_box{
+ width: 180px;
+ background: black;
+ cursor: pointer;
+ color: white;
+ margin: 0 auto;
+ text-align: center;
+ padding: 30px 0;
+ font-size: 20px;
+ font-weight: 500;
+ border-radius: 10px;
+}
+
+.project_box:hover{
+    background: rgb(12, 12, 12);
+}
+
 @media only screen and (max-width: 600px) {
     .icons{
         justify-content: center !important;
