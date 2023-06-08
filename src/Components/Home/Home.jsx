@@ -1,12 +1,14 @@
 import { Grid } from '@mui/material'
 import React from 'react'
 import ContactFields from '../ContactUs/ContactFields'
+import HomeSlider from '../Slider/HomeSlider'
 
 export default function Home() {
   return (
     <>
-    <div className='header'>
-         
+     <HomeSlider/>
+    <div className='header '>
+   
         <Grid container className='pt-12'>
              <Grid item md={12} className='px-3 text-center'>
                 <h2 className='text-white mt-5 pt-12 text_style'>Welcome to <br/> <span className='text-green-800'>Sensor Tech Solutions</span></h2>
@@ -18,10 +20,12 @@ export default function Home() {
              </Grid>
         </Grid>
     </div>
+   
     <div className='contact_container'>
       <span className='c_heading'>Contact Us For More Details</span>
       <ContactFields/>
     </div>
+  
     </>
   )
 }

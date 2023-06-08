@@ -13,29 +13,57 @@ const HomeSlider = () => {
 
      {"id":1,
       data:AudioSystem},
+      {"id":2,
+      data:CCTv},
+      {"id":3,
+      data:AirCurtain},
+      
   ]
+  
 
 
+  const responsive = {
+    superLargeDesktop: {
+      
+      breakpoint: { max: 4000, min: 3000 },
+      items: 1,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
 
 
   return (
    <>
 
-     <div className='w-full h-6'>
+     <div className='w-full '>
 
 
-
+     <Carousel responsive={responsive}
+      >
     {racks.map((item)=>{
 
        return(
         
         <React.Fragment key={item.id}>
-      <div className='h-20 w-full'>   <HomeSliderImage image={item.data}></HomeSliderImage></div>   
+      <div className='h-80 w-full'>  <HomeSliderImage image={item.data}></HomeSliderImage></div>   
+
         </React.Fragment>
         
         )
     
     })}
+    </Carousel>
 
 
      </div>
@@ -55,10 +83,11 @@ const HomeSlider = () => {
     
     <>
     
-      <div className='w-full h-28 ' >
+      <div className='w-full' >
 
 
-        <img src={image} alt="pic"></img>
+        <img  className='w-full h-96 overflow-hidden'  src={image} alt="pic "></img>
+      
 
       </div>
     

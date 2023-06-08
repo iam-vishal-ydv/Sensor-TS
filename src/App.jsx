@@ -5,14 +5,13 @@ import Home from "./Components/Home/Home";
 import About from "./Components/AboutUs/About";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import RetailProjects from "./Components/Retail Projects/RetailProjects";
-import HomeSlider from "./Components/Slider/HomeSlider";
+
 
 function App() {
   return (
     <>
       <NavBar />
       <Routes>
-        <Route path="/Sensor-TS/"   element={<HomeSlider/>} />
         <Route path="/Sensor-TS/"  element={<Home />} />
         <Route path="/Sensor-TS/about" element={<About />} />
         <Route path="/Sensor-TS/contact" element={<ContactUs />} />
