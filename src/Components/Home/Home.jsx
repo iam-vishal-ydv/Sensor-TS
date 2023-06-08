@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <>
     <div className='header'>
+         
         <Grid container className='pt-12'>
              <Grid item md={12} className='px-3 text-center'>
                 <h2 className='text-white mt-5 pt-12 text_style'>Welcome to <br/> <span className='text-green-800'>Sensor Tech Solutions</span></h2>

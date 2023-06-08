@@ -4,7 +4,7 @@ import { FaTimes } from 'react-icons/fa';
 import { FaBars } from 'react-icons/fa';
 
 
-export const NavBar = () => {
+const NavBar = () => {
   const navigate = useNavigate()
   const [navBar, setNavBar] = useState(false);
 
@@ -96,3 +96,6 @@ export const NavBar = () => {
     </>
   );
 }
+
+
+export default NavBar
