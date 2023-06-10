@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 export default function ContactUs() {
     return (
         <>
-        <div className='ps-11 pt-3 path'><Link className='text-lg text-gray-600' to='/Sensor-TS/'>Home</Link>&nbsp;&nbsp; <ArrowForwardIosIcon sx={{fontSize:'16px'}}/>&nbsp;&nbsp; <span className='text-lg text-gray-700'>Contact Us</span></div>
+        <div className=' pt-3 path'><Link className='text-lg text-gray-600' to='/Sensor-TS/'>Home</Link>&nbsp;&nbsp; <ArrowForwardIosIcon sx={{fontSize:'16px'}}/>&nbsp;&nbsp; <span className='text-lg text-gray-700'>Contact Us</span></div>
             <Grid container>
                 <Grid item md={6} px={5} py={3} sm={12} xs={12}>
                     <h2 className='c_heading'>Contact Us</h2>
