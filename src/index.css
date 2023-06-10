@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 .logo{
     width: 10%;
     *border: 1px solid red;
@@ -105,8 +103,9 @@
     *background: url('images/background.png');
     *background-size: cover;
     *background-repeat: no-repeat;
-    background: black;
+    background: #e4eded;
     height: 100vh;
+    color: black;
 }
 
 .text_style {
@@ -117,13 +116,15 @@
 .text-div {
     width: 70%;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 .description {
     font-size: 1.5rem;
     font-weight: 500;
-    color: white;
+    color: black;
     text-align: justify;
+ 
 }
 
 /* Contact Style */

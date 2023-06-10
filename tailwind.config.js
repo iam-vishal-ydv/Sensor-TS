@@ -1,30 +1,38 @@
 /** @type {import('tailwindcss').Config} */
-
-const plugin = require("tailwindcss/plugin");
-
-const Myclass = plugin(function ({ addUtilities }) {
-  addUtilities({
-    ".my-rotate-y-180": {
-      transform: "rotateY(180deg)",
-    },
-    ".preserve-3d": {
-      transformStyle: "preserve-3d",
-    },
-    ".perspective": {
-      perspective: "1000px",
-    },
-    ".backface-hidden": {
-      backfaceVisibility: "hidden",
-    },
-  });
-});
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+    
+    
+      keyframes: {
+        typing: {
+          "0%": {
+            width: "0%",
+            visibility: "hidden"
+          },
+          "100%": {
+            width: "100%"
+          }  
+        },
+        blink: {
+          "50%": {
+            borderColor: "transparent"
+          },
+          "100%": {
+            borderColor: "white"
+          }  
+        }
+      },
+      animation: {
+        typing: "typing 2s steps(20) infinite alternate, blink .7s infinite"
+      }
+
+  
+
+    },
   },
   plugins: [],
 }
