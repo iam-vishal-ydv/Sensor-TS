@@ -38,8 +38,7 @@ const NavBar = () => {
             className="text-xl text-black font-bold pointer"
             onClick={() => navigate("/Sensor-TS/")}
           >
-            {" "}
-            Sensor Tech Solutions
+           <img src='images/STSLogo.png' className="logo"/>
           </h1>
         </div>
 
