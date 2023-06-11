@@ -187,6 +187,15 @@
     cursor: pointer;
 }
 
+.about-product-heading{
+  font-size: 25px;
+  font-weight: 600;
+}
+.about-product-heading1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
 @media only screen and (max-width: 900px) {
     /* .project_box{
         width: 120px;

@@ -1,6 +1,6 @@
 import React from 'react'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { Grid } from '@mui/material';
 import img1 from '../../assets/rack1.jpeg'
 import img2 from '../../assets/POS-Billing-System.jpeg'
@@ -19,6 +19,7 @@ import img13 from '../../assets/Face-Detection.jpeg'
 
 export default function SingleProject() {
     const {id} = useParams()
+    const navigate = useNavigate()
     let data = [
         {name:'Racks',img:img1},
         {name:'POS Billing System',img:img2},
@@ -39,7 +40,7 @@ export default function SingleProject() {
     <div className=' pt-3 path'><Link className='text-xl text-gray-600' to='/Sensor-TS/'>Home</Link>&nbsp;&nbsp; <ArrowForwardIosIcon sx={{fontSize:'18px'}}/>&nbsp;&nbsp;<Link className='text-xl text-gray-600' to='/Sensor-TS/retail-projects'>Retail Projects</Link> &nbsp;&nbsp; <ArrowForwardIosIcon sx={{fontSize:'18px'}}/>&nbsp;&nbsp;<span className='text-xl text-gray-700'>{id}</span></div>
     <Grid container className='img-container'>
       {data.map((item,index)=> <Grid item md={2} sm={3} xs={6} px={2} pb={5}>
-        <img src={item.img} className='img' alt="" />
+        <img src={item.img} className='img' onClick={()=>navigate(`/Sensor-TS/retail-projects/singleproject/singleproduct/${item.name}`)} alt="" />
         <span className='text-center'>{item.name}</span>
         </Grid>)}
     </Grid>
