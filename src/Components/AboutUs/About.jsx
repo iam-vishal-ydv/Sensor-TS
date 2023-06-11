@@ -6,7 +6,7 @@ import { Grid } from '@mui/material';
 export default function About() {
   return (
     <>
-    <div className='ps-11 pt-3 path'><Link className='text-lg text-gray-600' to='/Sensor-TS/'>Home</Link>&nbsp;&nbsp; <ArrowForwardIosIcon sx={{fontSize:'16px'}}/>&nbsp;&nbsp; <span className='text-lg text-gray-700'>About Us</span></div>
+    <div className=' pt-3 path'><Link className='text-lg text-gray-600' to='/Sensor-TS/'>Home</Link>&nbsp;&nbsp; <ArrowForwardIosIcon sx={{fontSize:'16px'}}/>&nbsp;&nbsp; <span className='text-lg text-gray-700'>About Us</span></div>
     <Grid container>
       <Grid item md={6}  px={5} py={3} sm={12} xs={12}>
         <span className='c_heading'>About Us</span>
