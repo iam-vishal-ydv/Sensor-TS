@@ -180,21 +180,223 @@
     padding: 20px 2%;
 }
 
-.img{
+.img-con{
     width: 100%;
     height: 200px;
+    overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 0 4px -2px;
+    position: relative;
     cursor: pointer;
+    box-shadow: 0 0 4px -2px;
 }
 
+.img-con:hover .img1{
+   transform: scale(1.2);
+   transition: 0.5s;
+}
+.img-con:hover .img2{
+    transform: scale(1.2);
+    transition: 0.5s;
+ }
+ .img-con:hover .img3{
+    transform: scale(1.2);
+    transition: 0.5s;
+ }
+ .img-con:hover .img4{
+    transform: scale(1.2);
+    transition: 0.5s;
+ }
+ .img-con:hover .img5{
+    transform: scale(1.2);
+    transition: 0.5s;
+ }
+ .img-con:hover .img6{
+    transform: scale(1.2);
+    transition: 0.5s;
+ }
+ .img-con:hover .img7{
+    transform: scale(1.2);
+    transition: 0.5s;
+ }
+ .img-con:hover .img8{
+    transform: scale(1.2);
+    transition: 0.5s;
+ }
+ .img-con:hover .img9{
+    transform: scale(1.2);
+    transition: 0.5s;
+ }
+ .img-con:hover .img10{
+    transform: scale(1.2);
+    transition: 0.5s;
+ }
+ .img-con:hover .img11{
+    transform: scale(1.2);
+    transition: 0.5s;
+ }
+ .img-con:hover .img12{
+    transform: scale(1.2);
+    transition: 0.5s;
+ }
+ .img-con:hover .img13{
+    transform: scale(1.2);
+    transition: 0.5s;
+ }
+
+.img1{
+    width: 100%;
+    height: 200px;
+    background: url('../src/assets/rack4.jpeg');
+    background-size: cover;
+    overflow: hidden;
+    transition: 0.5s;
+    background-position: center;
+}
+.img2{
+    width: 100%;
+    height: 200px;
+    background: url('../src/assets/POS-Billing-System.jpeg');
+    background-size: cover;
+    overflow: hidden;
+    transition: 0.5s;
+    background-position: center;
+}
+.img3{
+    width: 100%;
+    height: 200px;
+    background: url('../src/assets/EAS-Antena.jpeg');
+    background-size: cover;
+    overflow: hidden;
+    transition: 0.5s;
+    background-position: center;
+}
+.img4{
+    width: 100%;
+    height: 200px;
+    background: url('../src/assets/Electronics-surveillance.jpeg');
+    background-size: cover;
+    overflow: hidden;
+    transition: 0.5s;
+    background-position: center;
+}
+.img5{
+    width: 100%;
+    height: 200px;
+    background: url('../src/assets/Air-Curtain.jpeg');
+    background-size: cover;
+    overflow: hidden;
+    transition: 0.5s;
+    background-position: center;
+}
+.img6{
+    width: 100%;
+    height: 200px;
+    background: url('../src/assets/Billing-Software.jpeg');
+    background-size: cover;
+    overflow: hidden;
+    transition: 0.5s;
+    background-position: center;
+}
+.img7{
+    width: 100%;
+    height: 200px;
+    background: url('../src/assets/IT-Infrastrucure.jpeg');
+    background-size: cover;
+    overflow: hidden;
+    transition: 0.5s;
+    background-position: center;
+}
+.img8{
+    width: 100%;
+    height: 200px;
+    background: url('../src/assets/Audio-System.jpeg');
+    background-size: cover;
+    overflow: hidden;
+    transition: 0.5s;
+    background-position: center;
+}
+.img9{
+    width: 100%;
+    height: 200px;
+    background: url('../src/assets/Fire-Alarm-System.jpeg');
+    background-size: cover;
+    overflow: hidden;
+    transition: 0.5s;
+    background-position: center;
+}
+.img10{
+    width: 100%;
+    height: 200px;
+    background: url('../src/assets/Digital-Signage.jpeg');
+    background-size: cover;
+    overflow: hidden;
+    transition: 0.5s;
+    background-position: center;
+}
+.img11{
+    width: 100%;
+    height: 200px;
+    background: url('../src/assets/Biometric.jpeg');
+    background-size: cover;
+    overflow: hidden;
+    transition: 0.5s;
+    background-position: center;
+}
+.img12{
+    width: 100%;
+    height: 200px;
+    background: url('../src/assets/RFID-Inventory.jpeg');
+    background-size: cover;
+    overflow: hidden;
+    transition: 0.5s;
+    background-position: center;
+}
+.img13{
+    width: 100%;
+    height: 200px;
+    background: url('../src/assets/Face-Detection.jpeg');
+    background-size: cover;
+    overflow: hidden;
+    transition: 0.5s;
+    background-position: center;
+}
+
+
+.inner-img{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.8),rgba(0,0,0,0));
+    top: 73%;
+    transition: 0.5s;
+    position: absolute;
+}
+
+
+.img-con:hover .inner-img{
+    top: 0;
+    transition: 0.5s;
+  }
+ 
+
 .about-product-heading{
-  font-size: 25px;
+  font-size: 2rem;
   font-weight: 600;
 }
 .about-product-heading1{
     font-size: 2.5rem;
     font-weight: 700;
+}
+
+.top-header{
+    background: #111;
+    width: 100%;
+    height: 300px;
+}
+
+.rheading{
+    font-size: 4rem;
+    color: white;
+    padding: 7% 3%;
 }
 
 @media only screen and (max-width: 900px) {
