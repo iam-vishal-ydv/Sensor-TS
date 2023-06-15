@@ -45,7 +45,7 @@ export default function SingleProject() {
             </Grid>
            </div> */}
             <Grid container className='img-container' mt={2}>
-                {data.map((item, index) => <Grid item md={2} sm={3} xs={6} px={2} pb={5} onClick={()=>navigate(`/Sensor-TS/retail-projects/singleproduct/${item.name}`)}>
+                {data.map((item, index) => <Grid item md={3} sm={4} xs={12} px={2} pb={5} onClick={()=>navigate(`/Sensor-TS/retail-projects/singleproduct/${item.name}`)}>
                     <div className='img-con'>
                         <div className={item.img} >
 
