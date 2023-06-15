@@ -18,7 +18,7 @@ import img13 from '../../assets/Face-Detection.jpeg'
 import { Grid } from '@mui/material';
 import ContactFields from '../ContactUs/ContactFields';
 
-export default function SingleProduct() {
+export default function SingleProduct({setAlert}) {
     const {id} = useParams()
   return (
     <>
@@ -45,7 +45,7 @@ export default function SingleProduct() {
     </Grid>
      <div className='contact_container'>
         <h1 className='about-product-heading text-center pb-5'>Contact Us</h1>
-    <ContactFields/>
+    <ContactFields setAlert={setAlert}/>
     </div>
     </>
   )

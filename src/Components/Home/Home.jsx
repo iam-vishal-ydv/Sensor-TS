@@ -3,7 +3,7 @@ import React from "react";
 import ContactFields from "../ContactUs/ContactFields";
 
 
-export default function Home() {
+export default function Home({setAlert}) {
   return (
     <>
      
@@ -30,7 +30,7 @@ export default function Home() {
 
       <div className="contact_container bg">
         <span className="c_heading">Contact Us For More Details</span>
-        <ContactFields />
+        <ContactFields setAlert={setAlert} />
       </div>
     </>
   );
