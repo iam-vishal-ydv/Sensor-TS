@@ -38,12 +38,14 @@ export default function SingleProject() {
     ]
     return (
         <>
-            {/* <div className=' pt-3 path'><Link className='text-xl text-gray-600' to='/Sensor-TS/'>Home</Link>&nbsp;&nbsp; <ArrowForwardIosIcon sx={{ fontSize: '18px' }} />&nbsp;&nbsp;<Link className='text-xl text-gray-600' to='/Sensor-TS/retail-projects'>Retail Projects</Link> &nbsp;&nbsp; <ArrowForwardIosIcon sx={{ fontSize: '18px' }} />&nbsp;&nbsp;<span className='text-xl text-gray-700'>{id}</span></div> */}
-            <Grid container className='top-header'>
-                <div className='rheading'>Retail Products</div>
+            <div className=' pt-3 path'><Link className='text-xl text-gray-600' to='/Sensor-TS/'>Home</Link>&nbsp;&nbsp; <ArrowForwardIosIcon sx={{ fontSize: '18px' }} />&nbsp;&nbsp;<Link className='text-xl text-gray-600' to='/Sensor-TS/retail-projects'>Retail Projects</Link> </div>
+           {/* <div className='top-container'>
+           <Grid container className='top-header'>
+                <div className='rheading text-center mx-auto'>Check out some of our awesome<br/> projects with creative ideas.</div>
             </Grid>
+           </div> */}
             <Grid container className='img-container' mt={2}>
-                {data.map((item, index) => <Grid item md={2} sm={3} xs={6} px={2} pb={5}>
+                {data.map((item, index) => <Grid item md={2} sm={3} xs={6} px={2} pb={5} onClick={()=>navigate(`/Sensor-TS/retail-projects/singleproduct/${item.name}`)}>
                     <div className='img-con'>
                         <div className={item.img} >
 
@@ -56,7 +58,7 @@ export default function SingleProject() {
                 </Grid>)}
             </Grid>
             <div className='contact_container'>
-                <h1 className='about-product-heading text-center pb-5'>Contact Us For More Information</h1>
+                <h1 className='about-product-heading text-center pb-5 text-gray-700'>Contact Us</h1>
                 <ContactFields />
             </div>
         </>

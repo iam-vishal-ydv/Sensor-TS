@@ -19,7 +19,7 @@ function App() {
         <Route path="/Sensor-TS/contact" element={<ContactUs />} />
         <Route path="/Sensor-TS/retail-projects" element={<RetailProjects />} />
         <Route path="/Sensor-TS/retail-projects/singleproject/:id" element={<SingleProject />} />
-        <Route path="/Sensor-TS/retail-projects/singleproject/singleproduct/:id" element={<SingleProduct />} />
+        <Route path="/Sensor-TS/retail-projects/singleproduct/:id" element={<SingleProduct />} />
       </Routes>
       <Footer />
     </>

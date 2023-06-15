@@ -24,7 +24,7 @@ export default function SingleProduct() {
     <>
     <div className=' pt-3 path'><Link className='text-xl text-gray-600' to='/Sensor-TS/'>Home</Link>&nbsp;&nbsp; <ArrowForwardIosIcon sx={{fontSize:'18px'}}/>&nbsp;&nbsp;<Link className='text-xl text-gray-600' to='/Sensor-TS/retail-projects'>Retail Projects</Link> &nbsp;&nbsp; <ArrowForwardIosIcon sx={{fontSize:'18px'}}/>&nbsp;&nbsp;<span className='text-xl text-gray-700'>{id}</span></div>
     <Grid container py={3}>
-        <Grid item md={6}>
+        <Grid item md={6} className='px-4'>
             <img src={img1} alt="" className='' />
         </Grid>
         <Grid item md={6} px={3}>
@@ -34,7 +34,7 @@ export default function SingleProduct() {
         <Grid item md={12} pt={3}>
         <h1 className='about-product-heading1 text-center'>Suggested Products</h1>
         <Grid container py={2}>
-            <Grid item md={2} sm={3} xs={6} px={2}><img src={img1} className='img' alt="" /></Grid>
+            <Grid item md={2} sm={3} xs={6} px={2}><div className='img'><img src={img1}  alt="" /></div></Grid>
             <Grid item md={2} sm={3} xs={6} px={2}><img src={img2} className='img' alt="" /></Grid>
             <Grid item md={2} sm={3} xs={6} px={2}><img src={img3} className='img' alt="" /></Grid>
             <Grid item md={2} sm={3} xs={6} px={2}><img src={img4} className='img' alt="" /></Grid>
@@ -44,7 +44,7 @@ export default function SingleProduct() {
         </Grid>
     </Grid>
      <div className='contact_container'>
-        <h1 className='about-product-heading text-center pb-5'>Contact Us For More Information</h1>
+        <h1 className='about-product-heading text-center pb-5'>Contact Us</h1>
     <ContactFields/>
     </div>
     </>
