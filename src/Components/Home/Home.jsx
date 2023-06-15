@@ -8,7 +8,7 @@ export default function Home() {
     <>
      
       <div className="header ">
-        <Grid container className="pt-12">
+        <Grid container className="pt-12 bg-white">
           <Grid item md={12} className="px-3 text-center ">
             <h2 className=" mt-5 pt-12 text_style">
               Welcome to <br />

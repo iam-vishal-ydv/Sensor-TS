@@ -104,7 +104,7 @@
     *background: url('images/background.png');
     *background-size: cover;
     *background-repeat: no-repeat;
-    background: #e4eded;
+    background: white;
     height: 100vh;
     color: black;
 }
