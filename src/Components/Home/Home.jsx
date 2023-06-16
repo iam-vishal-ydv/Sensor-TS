@@ -1,18 +1,24 @@
 import { Grid } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import ContactFields from "../ContactUs/ContactFields";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export default function Home({setAlert}) {
+  
+
+  useEffect(()=>{
+   
+  },[])
+
   return (
     <>
-    <a href="https://api.whatsapp.com/send?phone=916398474181&text=Hello Varun" className="whatsapp"><WhatsAppIcon/></a>
+    <a href="https://api.whatsapp.com/send?phone=916398474181&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp'/></a>
       <div className="header">
         <Grid container className="pt-12 bg-white">
           <Grid item md={12} className="px-3 text-center ">
             <h2 className=" mt-5 pt-12 text_style">
               Welcome to <br />
-              <div className="w-[380px] h-11 m-auto ">
+              <div className=" w-[360px] h-11 m-auto">
                 <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white  text-center text-4xl font-bold text-orange-500">
                    Cencertek Solutions
                 </h1>

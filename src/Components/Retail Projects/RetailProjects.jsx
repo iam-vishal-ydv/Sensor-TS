@@ -3,6 +3,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { Grid } from '@mui/material';
 import ContactFields from '../ContactUs/ContactFields';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 // import img1 from '../../assets/rack1.jpeg'
 // import img2 from '../../assets/POS-Billing-System.jpeg'
 // import img3 from '../../assets/EAS-Antena.jpeg'
@@ -38,6 +39,7 @@ export default function SingleProject() {
     ]
     return (
         <>
+        <a href="https://api.whatsapp.com/send?phone=916398474181&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp'/></a>
             <div className=' pt-3 path'><Link className='text-xl text-gray-600' to='/Sensor-TS/'>Home</Link>&nbsp;&nbsp; <ArrowForwardIosIcon sx={{ fontSize: '18px' }} />&nbsp;&nbsp;<Link className='text-xl text-gray-600' to='/Sensor-TS/retail-projects'>Retail Projects</Link> </div>
            {/* <div className='top-container'>
            <Grid container className='top-header'>
