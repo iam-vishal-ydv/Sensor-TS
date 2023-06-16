@@ -1,19 +1,19 @@
 import { Grid } from "@mui/material";
 import React from "react";
 import ContactFields from "../ContactUs/ContactFields";
-
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export default function Home({setAlert}) {
   return (
     <>
-     
-      <div className="header ">
+    <a href="whatsapp://send?text=Hello" className="whatsapp"><WhatsAppIcon/></a>
+      <div className="header">
         <Grid container className="pt-12 bg-white">
           <Grid item md={12} className="px-3 text-center ">
             <h2 className=" mt-5 pt-12 text_style">
               Welcome to <br />
               <div className="w-[380px] h-11 m-auto ">
-                <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-4xl font-bold text-orange-500">
+                <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white  text-center text-4xl font-bold text-orange-500">
                    Cencertek Solutions
                 </h1>
               </div>

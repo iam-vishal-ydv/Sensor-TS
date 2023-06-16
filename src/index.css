@@ -11,6 +11,18 @@
     cursor: pointer;
 }
 
+.whatsapp{
+    z-index: 999;
+    padding: 15px;
+    background: #25D366;
+    border-radius: 100%;
+    position: fixed;
+    cursor: pointer;
+    right: 40px;
+    bottom: 30px;
+    color: white;
+}
+
 
 /* width */
 ::-webkit-scrollbar {
