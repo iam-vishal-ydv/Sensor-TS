@@ -6,7 +6,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 export default function Home({setAlert}) {
   return (
     <>
-    <a href="whatsapp://send?text=Hello" className="whatsapp"><WhatsAppIcon/></a>
+    <a href="https://api.whatsapp.com/send?phone=916398474181&text=Hello Varun" className="whatsapp"><WhatsAppIcon/></a>
       <div className="header">
         <Grid container className="pt-12 bg-white">
           <Grid item md={12} className="px-3 text-center ">
