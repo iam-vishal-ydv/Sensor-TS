@@ -18,7 +18,7 @@ export default function Home({setAlert}) {
           <Grid item md={12} className="px-3 text-center ">
             <h2 className=" mt-5 pt-12 text_style">
               Welcome to <br />
-              <div className=" w-[360px] h-11 m-auto border">
+              <div className=" w-[360px] h-11 m-auto">
                 <h1 className="animate-typing overflow-hidden m-auto whitespace-nowrap border-r-4 border-r-white  text-4xl font-bold text-orange-500">
                    Cencertek Solutions
                 </h1>
