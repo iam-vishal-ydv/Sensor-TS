@@ -11,6 +11,31 @@
     cursor: pointer;
 }
 
+.whatsapp{
+    z-index: 999;
+    padding: 15px;
+    background: #25D366;
+    border-radius: 100%;
+    position: fixed;
+    cursor: pointer;
+    right: 40px;
+    bottom: 40px;
+    color: white;
+}
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:100%;
+    width:100%;
+}
+.gmap_canvas{
+    overflow:hidden;
+    background:none!important;
+    height:100%;
+    width:100%;
+}
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -383,9 +408,34 @@
   font-size: 2rem;
   font-weight: 600;
 }
+.about-product-heading2{
+    font-size: 2rem;
+    font-weight: 600;
+  }
 .about-product-heading1{
     font-size: 2.5rem;
     font-weight: 700;
+}
+
+.about-product-heading2::before{
+    content: ' ';
+    font-size: 14px;
+    width: 190px;
+    height: 3px;
+    background: #222;
+    position: absolute;
+    top: 49px;
+    left: 43%;
+}
+.about-product-heading2::after{
+    content: 'for more details';
+    font-size: 14px;
+    padding: 0 5px;
+    color: crimson;
+    background: white;
+    position: absolute;
+    top: 39px;
+    left: 46%;
 }
 
 .about-product-heading::before{
@@ -428,6 +478,17 @@
     
 }
 
+@media only screen and (max-width: 1100px) {
+    .about-product-heading2::before{
+        top: 49px;
+        left: 41%;
+    }
+    .about-product-heading2::after{
+    
+        left: 45%;
+    }   
+}
+
 @media only screen and (max-width: 900px) {
     /* .project_box{
         width: 120px;
@@ -446,6 +507,14 @@
     .about-product-heading::before{
         top: 49px;
         left: 34%;
+    }
+    .about-product-heading2::before{
+        top: 49px;
+        left: 40%;
+    }
+    .about-product-heading2::after{
+    
+        left: 44%;
     }
 }
 
@@ -477,6 +546,14 @@
     .rheading{
         font-size: 1.5rem;
     }
+    .about-product-heading2::before{
+        top: 49px;
+        left: 35%;
+    }
+    .about-product-heading2::after{
+    
+        left: 41%;
+    }
   }
 
   @media only screen and (max-width: 480px) {
@@ -492,5 +569,13 @@
     }
     .about-product-heading::after{
         left: 38%;
+    }
+    .about-product-heading2::before{
+        top: 49px;
+        left: 25%;
+    }
+    .about-product-heading2::after{
+    
+        left: 35%;
     }
   }

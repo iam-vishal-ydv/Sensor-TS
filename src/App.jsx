@@ -7,19 +7,23 @@ import ContactUs from "./Components/ContactUs/ContactUs";
 import RetailProjects from "./Components/Retail Projects/RetailProjects";
 import SingleProject from "./Components/Retail Projects/SingleProject";
 import SingleProduct from "./Components/Retail Projects/SingleProduct";
+import { useState } from "react";
+import ContactFields from "./Components/ContactUs/ContactFields";
 
 
 function App() {
+  const [alert,setAlert] = useState(false)
   return (
     <>
-      <NavBar />
+      <NavBar alert={alert}/>
       <Routes>
-        <Route path="/Sensor-TS/"  element={<Home />} />
-        <Route path="/Sensor-TS/about" element={<About />} />
-        <Route path="/Sensor-TS/contact" element={<ContactUs />} />
-        <Route path="/Sensor-TS/retail-projects" element={<RetailProjects />} />
-        <Route path="/Sensor-TS/retail-projects/singleproject/:id" element={<SingleProject />} />
-        <Route path="/Sensor-TS/retail-projects/singleproduct/:id" element={<SingleProduct />} />
+        <Route path="/Sensor-TS/"  element={<Home setAlert={setAlert}/>} />
+        <Route path="/Sensor-TS/about" element={<About setAlert={setAlert}/>} />
+        <Route path="/Sensor-TS/contact" element={<ContactUs setAlert={setAlert} alert={alert}/>} />
+        <Route path="/Sensor-TS/retail-projects" element={<RetailProjects setAlert={setAlert}/>} />
+        <Route path="/Sensor-TS/retail-projects/singleproject/:id" element={<SingleProject setAlert={setAlert}/>} />
+        <Route path="/Sensor-TS/retail-projects/singleproduct/:id" element={<SingleProduct setAlert={setAlert}/>} />
+        <Route path="/msg" element={<ContactFields alert={alert} />} />
       </Routes>
       <Footer />
     </>

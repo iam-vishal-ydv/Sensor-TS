@@ -2,10 +2,36 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
+import { Alert, Button, IconButton, Snackbar } from "@mui/material";
+import CloseIcon from '@mui/icons-material/Close';
 
-const NavBar = () => {
+const NavBar = ({alert}) => {
   const navigate = useNavigate();
   const [navBar, setNavBar] = useState(false);
+  
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  };
+  const action = (
+    <React.Fragment>
+      <Button color="secondary" size="small" onClick={handleClose}>
+        UNDO
+      </Button>
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="success"
+        onClick={handleClose}
+      >
+        <CloseIcon fontSize="small" />
+      </IconButton>
+    </React.Fragment>
+  );
 
   const links = [
     {
@@ -95,6 +121,18 @@ const NavBar = () => {
           </ul>
         )}
       </div>
+      {/* {!alert?<Alert   severity="success">Email Send Succesfully</Alert>:''} */}
+      <Snackbar
+        open={alert}
+        autoHideDuration={6000}
+        onClose={handleClose}
+       
+        action={action}
+      >
+        <Alert severity="success" sx={{ width: '100%' }}>
+          Email Send Successfully
+        </Alert>
+      </Snackbar>
     </>
   );
 };

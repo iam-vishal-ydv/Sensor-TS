@@ -1,6 +1,7 @@
 import React from 'react'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { Link, useParams } from 'react-router-dom';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import img1 from '../../assets/rack1.jpeg'
 import img2 from '../../assets/POS-Billing-System.jpeg'
 import img3 from '../../assets/EAS-Antena.jpeg'
@@ -18,10 +19,11 @@ import img13 from '../../assets/Face-Detection.jpeg'
 import { Grid } from '@mui/material';
 import ContactFields from '../ContactUs/ContactFields';
 
-export default function SingleProduct() {
+export default function SingleProduct({setAlert}) {
     const {id} = useParams()
   return (
     <>
+    <a href="https://api.whatsapp.com/send?phone=916398474181&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp'/></a>
     <div className=' pt-3 path'><Link className='text-xl text-gray-600' to='/Sensor-TS/'>Home</Link>&nbsp;&nbsp; <ArrowForwardIosIcon sx={{fontSize:'18px'}}/>&nbsp;&nbsp;<Link className='text-xl text-gray-600' to='/Sensor-TS/retail-projects'>Retail Projects</Link> &nbsp;&nbsp; <ArrowForwardIosIcon sx={{fontSize:'18px'}}/>&nbsp;&nbsp;<span className='text-xl text-gray-700'>{id}</span></div>
     <Grid container py={3}>
         <Grid item md={6} className='px-4'>
@@ -45,7 +47,7 @@ export default function SingleProduct() {
     </Grid>
      <div className='contact_container'>
         <h1 className='about-product-heading text-center pb-5'>Contact Us</h1>
-    <ContactFields/>
+    <ContactFields setAlert={setAlert}/>
     </div>
     </>
   )
