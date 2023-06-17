@@ -70,12 +70,15 @@ export default function SingleProject({data}) {
     <h5 className="mb-2 text-xl font-bold text-black ">{name}</h5>
   </a>
   <p className="mb-3 font-normal  text-base  ">{infoAbout}</p>
-
+  {/* <a href="#" className="inline-flex items-center capitalize   hover:transform hover:transition hover:duration-500 hover:scale-110  px-3 py-2 text-sm font-medium text-center text-white bg-red-700   rounded-lg hover:bg-red-500 ">
+    Read more..
+ 
+  </a> */}
 
 <a href="#_" class="relative inline-flex items-center justify-center px-5 py-2 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
 <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-red-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
 <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
-<span class="relative"> Read more..</span>
+<span class="relative"> Read More <BsArrowRight className='ml-2 mt-1'  /></span>
 </a>
 </div>
 
