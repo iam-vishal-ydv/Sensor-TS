@@ -4,7 +4,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 // import { Grid } from '@mui/material';
 import ContactFields from '../ContactUs/ContactFields';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import { BsArrowRight} from 'react-icons/bs';
+
 
 
 
@@ -78,7 +78,7 @@ export default function SingleProject({data}) {
 <a href="#_" class="relative inline-flex items-center justify-center px-5 py-2 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
 <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-red-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
 <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
-<span class="relative"> Read More <BsArrowRight className='ml-2 mt-1'  /></span>
+<span class="relative"> Read More..</span> 
 </a>
 </div>
 
