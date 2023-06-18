@@ -34,6 +34,11 @@ export default function Home({setAlert}) {
         </Grid>
       </div>
 
+      <Grid conatiner style={{position:'relative'}}>
+        <h1 className="text-center pb-5 text-gray-700 home-product-heading1">WHAT WE DO</h1>
+        <Grid item></Grid>
+      </Grid>
+
       <div style={{position:'relative'}}>
         <h1 className='about-product-heading2 text-center pb-5 text-gray-700'>Contact Us</h1>
         </div>

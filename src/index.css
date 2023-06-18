@@ -463,6 +463,33 @@
     padding: 1% 3%;
 }
 
+.home-product-heading1{
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+.home-product-heading1::before{
+    content: ' ';
+    font-size: 14px;
+    width: 250px;
+    height: 3px;
+    background: #222;
+    position: absolute;
+    top: 49px;
+    left: 41%;
+}
+.home-product-heading1::after{
+    content: 'Our Expertize & Services';
+    font-size: 14px;
+    padding: 0 5px;
+    color: crimson;
+    background: white;
+    position: absolute;
+    top: 39px;
+    left: 44%;
+}
+
+
 .top-header{
     background: #f2f2f2;
     width: 90%;
