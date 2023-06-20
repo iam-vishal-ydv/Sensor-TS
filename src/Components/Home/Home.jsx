@@ -20,7 +20,7 @@ export default function Home({setAlert}) {
             <h2 className=" mt-5 pt-12 text_style">
               Welcome to <br />
               <div className=" w-[335px] h-11 m-auto">
-                <h1 className="animate-typing overflow-hidden m-auto whitespace-nowrap border-r-4 border-r-white  text-3xl font-bold text-orange-500">
+                <h1 className="animate-typing overflow-hidden m-auto whitespace-nowrap border-r-4 border-r-white  text-3xl font-bold " style={{color:'crimson'}}>
                    Cencertek Solutions
                 </h1>
               </div>
