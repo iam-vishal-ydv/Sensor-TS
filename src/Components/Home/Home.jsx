@@ -58,21 +58,21 @@ export default function Home({setAlert}) {
       </Grid>
       <Grid container py={10} sx={{background:'#f1f1f1'}} >
         <Grid item md={4} sm={12} xs={12} className="text-center" px={3}>
-         <div className="border py-2" style={{borderRadius:'30px'}}>
+         <div className="border py-2 mb-2" style={{borderRadius:'30px'}}>
          <div style={{fontSize:'3em',fontWeight:'600'}}>Clients</div>
           <div style={{fontSize:'2em'}}>500+</div>
           <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nesciunt.</div>
          </div>
         </Grid>
         <Grid item md={4} sm={12} xs={12} className="text-center" px={3}>
-        <div className="border py-2" style={{borderRadius:'30px'}}>
+        <div className="border py-2 mb-2" style={{borderRadius:'30px'}}>
         <div style={{fontSize:'3em',fontWeight:'600'}}>Completed Projects</div>
           <div style={{fontSize:'2em'}}>100+</div>
           <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nesciunt.</div>
           </div>
         </Grid>
         <Grid item md={4} sm={12} xs={12} className="text-center" px={3}>
-        <div className="border py-2" style={{borderRadius:'30px'}}>
+        <div className="border py-2 mb-2" style={{borderRadius:'30px'}}>
         <div style={{fontSize:'3em',fontWeight:'600'}}>Clients</div>
           <div style={{fontSize:'2em'}}>500+</div>
           <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nesciunt.</div>
