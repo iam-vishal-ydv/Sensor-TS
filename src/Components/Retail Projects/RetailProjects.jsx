@@ -8,39 +8,39 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 
 
-export default function SingleProject({data}) {
+export default function SingleProject({ data }) {
     const { id } = useParams()
     const navigate = useNavigate()
- 
+
     return (
         <>
-        <a href="https://api.whatsapp.com/send?phone=916398474181&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp'/></a>
+            <a href="https://api.whatsapp.com/send?phone=916398474181&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp' /></a>
             <div className=' pt-3 path'><Link className='text-xl text-gray-600' to='/Sensor-TS/'>Home</Link>&nbsp;&nbsp; <ArrowForwardIosIcon sx={{ fontSize: '18px' }} />&nbsp;&nbsp;<Link className='text-xl text-gray-600' to='/Sensor-TS/retail-projects'>Retail Projects</Link> </div>
-        
 
 
-                
 
-    
-    
-    <div    className='  flex  flex-wrap  gap-9 w-[90%]  mx-auto  mt-7     justify-center '>
 
-     { data.map((item)=>{
-    
-  
-       
-    return <React.Fragment key={item.id}>
-      
-                    
-               <di ><Cards image={item.poster} name={item.name} infoAbout={item.infoAbout}></Cards> </di> 
-    </React.Fragment>
-   
-   })}
-       
 
-   
 
-       </div>
+
+            <div className='  flex  flex-wrap  gap-9 w-[90%]  mx-auto  mt-7     justify-center '>
+
+                {data.map((item) => {
+
+
+
+                    return <React.Fragment key={item.id}>
+
+
+                        <di ><Cards image={item.poster} name={item.name} infoAbout={item.infoAbout}></Cards> </di>
+                    </React.Fragment>
+
+                })}
+
+
+
+
+            </div>
 
 
 
@@ -54,40 +54,40 @@ export default function SingleProject({data}) {
 
 
 
-   const  Cards=({image,name,infoAbout})=>{
+export const Cards = ({ image, name, infoAbout }) => {
 
-         console.log(image,"hello")
-   return <>
-   
-   
-<div     data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"  class="max-w-sm bg-white  lg:w-72  shadow-md   cursor-pointer     border border-gray-200 rounded-md ">
-    <a href="#">
-        <img class="rounded-t-lg  h-60 w-full " src={image} alt="" />
-    </a>
-   <div className="p-5">
-  <a href="#">
-    <h5 className="mb-2 text-xl font-bold text-black ">{name}</h5>
-  </a>
-  <p className="mb-3 font-normal  text-base  ">{infoAbout}</p>
-  {/* <a href="#" className="inline-flex items-center capitalize   hover:transform hover:transition hover:duration-500 hover:scale-110  px-3 py-2 text-sm font-medium text-center text-white bg-red-700   rounded-lg hover:bg-red-500 ">
+    console.log(image, "hello")
+    return <>
+
+
+        <div data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom" class="max-w-sm bg-white  lg:w-72  shadow-md   cursor-pointer     border border-gray-200 rounded-md ">
+            <a href="#">
+                <img class="rounded-t-lg  h-60 w-full " src={image} alt="" />
+            </a>
+            <div className="p-5">
+                <a href="#">
+                    <h5 className="mb-2 text-xl font-bold text-black ">{name}</h5>
+                </a>
+                <p className="mb-3 font-normal  text-base  ">{infoAbout}</p>
+                {/* <a href="#" className="inline-flex items-center capitalize   hover:transform hover:transition hover:duration-500 hover:scale-110  px-3 py-2 text-sm font-medium text-center text-white bg-red-700   rounded-lg hover:bg-red-500 ">
     Read more..
  
   </a> */}
 
-<a href="#_" class="relative inline-flex items-center justify-center px-5 py-2 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
-<span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-red-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
-<span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
-<span class="relative"> Read More..</span> 
-</a>
-</div>
+                <a href="#_" class="relative inline-flex items-center justify-center px-5 py-2 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
+                    <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-red-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
+                    <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+                    <span class="relative"> Read More..</span>
+                </a>
+            </div>
 
-</div>
+        </div>
 
-   
-   
-   
-   </>
+
+
+
+    </>
 
 }
 

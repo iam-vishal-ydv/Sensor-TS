@@ -92,7 +92,7 @@
             {
                 id:10,
                 poster:img10,
-                name:"Fire Alarm System",
+                name:"Digital-Signage",
                 
                 infoAbout:"The rack is a torture device consisting of a rectangular, usually wooden frame, slightly raised from the ground, with a roller at one or both ends. The victim's ankles are fastened to one roller and the wrists are chained to the other. "
 
@@ -102,7 +102,7 @@
             {
                 id:11,
                 poster:img11,
-                name:"Fire Alarm System",
+                name:"Biometric",
                 
                 infoAbout:"The rack is a torture device consisting of a rectangular, usually wooden frame, slightly raised from the ground, with a roller at one or both ends. The victim's ankles are fastened to one roller and the wrists are chained to the other. "
 
@@ -111,7 +111,16 @@
             {
                 id:12,
                 poster:img12,
-                name:"Fire Alarm System",
+                name:"RFID-Inventory",
+                
+                infoAbout:"The rack is a torture device consisting of a rectangular, usually wooden frame, slightly raised from the ground, with a roller at one or both ends. The victim's ankles are fastened to one roller and the wrists are chained to the other. "
+
+            
+            },
+            {
+                id:13,
+                poster:img13,
+                name:"Face Detection",
                 
                 infoAbout:"The rack is a torture device consisting of a rectangular, usually wooden frame, slightly raised from the ground, with a roller at one or both ends. The victim's ankles are fastened to one roller and the wrists are chained to the other. "
 

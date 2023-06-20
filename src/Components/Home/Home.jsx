@@ -2,7 +2,8 @@ import { Grid } from "@mui/material";
 import React, { useEffect } from "react";
 import ContactFields from "../ContactUs/ContactFields";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-
+import { AllData } from "../../Data/data";
+import { Cards } from "../Retail Projects/RetailProjects";
 export default function Home({setAlert}) {
   
 
@@ -36,10 +37,50 @@ export default function Home({setAlert}) {
 
       <Grid conatiner style={{position:'relative'}}>
         <h1 className="text-center pb-5 text-gray-700 home-product-heading1">WHAT WE DO</h1>
-        <Grid item></Grid>
+        <Grid item md={12}>
+        <div className='  flex  flex-wrap  gap-9 w-[90%]  mx-auto  my-7     justify-center '>
+
+{AllData.map((item) => {
+
+
+
+    return <React.Fragment key={item.id}>
+       {item.id === 1 || item.id === 2 || item.id === 12 || item.id === 13 ? <di><Cards image={item.poster} name={item.name} infoAbout={item.infoAbout}></Cards> </di>:''}
+    </React.Fragment>
+
+})}
+
+
+
+
+</div>
+        </Grid>
+      </Grid>
+      <Grid container py={10} sx={{background:'#f1f1f1'}} >
+        <Grid item md={4} sm={12} xs={12} className="text-center" px={3}>
+         <div className="border py-2" style={{borderRadius:'30px'}}>
+         <div style={{fontSize:'3em',fontWeight:'600'}}>Clients</div>
+          <div style={{fontSize:'2em'}}>500+</div>
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nesciunt.</div>
+         </div>
+        </Grid>
+        <Grid item md={4} sm={12} xs={12} className="text-center" px={3}>
+        <div className="border py-2" style={{borderRadius:'30px'}}>
+        <div style={{fontSize:'3em',fontWeight:'600'}}>Completed Projects</div>
+          <div style={{fontSize:'2em'}}>100+</div>
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nesciunt.</div>
+          </div>
+        </Grid>
+        <Grid item md={4} sm={12} xs={12} className="text-center" px={3}>
+        <div className="border py-2" style={{borderRadius:'30px'}}>
+        <div style={{fontSize:'3em',fontWeight:'600'}}>Clients</div>
+          <div style={{fontSize:'2em'}}>500+</div>
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nesciunt.</div>
+          </div>
+        </Grid>
       </Grid>
 
-      <div style={{position:'relative'}}>
+      <div className="mt-4" style={{position:'relative'}}>
         <h1 className='about-product-heading2 text-center pb-5 text-gray-700'>Contact Us</h1>
         </div>
       <Grid container>
