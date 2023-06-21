@@ -551,14 +551,14 @@
 
 .oval1{
     position: absolute;
-    top: 40px;
+    top: 100px;
     right: 20%;
 }
 
 .oval2{
     position: absolute;
     bottom: 0px;
-    left: 10%;
+    right: 30%;
 }
 
 .btn5{
@@ -588,6 +588,7 @@
     .top-container{
         padding: 0 4%;
     }
+    
 }
 
 @media only screen and (max-width: 600px) {

@@ -83,7 +83,7 @@ export default function Home({ setAlert }) {
           <div className="right"></div>
           <div className="bottom1"></div>
         </Grid>
-        <Grid item md={6} sm={12} xs={12} className="pt-28" style={{position:'relative'}}>
+        <Grid item md={6} sm={12} xs={12} className="pt-28" style={{position:'relative',padding:'8% 5%'}}>
           <div className="container_text_heading">Start Bussines With <br/>Us</div>
           <div className="container_text text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate a, <br/> deleniti perspiciatis doloribus quaerat rem consequatur quam,<br/><br/> eveniet, numquam cumque necessitatibus neque non sapiente voluptatum libero<br/> iure aspernatur laboriosam.</div>
           <button className="btn5" onClick={()=>navigate('/Sensor-TS/contact')}>Contact us</button>
