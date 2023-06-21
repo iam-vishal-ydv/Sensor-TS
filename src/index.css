@@ -419,13 +419,13 @@
 
 .about-product-heading2::before{
     content: ' ';
-    font-size: 14px;
     width: 190px;
     height: 3px;
     background: #222;
     position: absolute;
     top: 49px;
-    left: 44%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .about-product-heading2::after{
     content: 'for more details';
@@ -435,7 +435,8 @@
     background: white;
     position: absolute;
     top: 39px;
-    left: 46%;
+    transform: translateX(-50%);
+    left: 50%;
 }
 
 .about-product-heading::before{
@@ -446,7 +447,8 @@
     background: #222;
     position: absolute;
     top: 49px;
-    left: 33%;
+    transform: translateX(-50%);
+    left: 50%;
 }
 .about-product-heading::after{
     content: 'for more details';
@@ -456,7 +458,8 @@
     background: white;
     position: absolute;
     top: 39px;
-    left: 40%;
+    transform: translateX(-50%);
+    left: 50%;
 }
 
 .top-container{
@@ -476,7 +479,8 @@
     background: #222;
     position: absolute;
     top: 49px;
-    left: 42%;
+    transform: translateX(-50%);
+    left: 50%;
 }
 .home-product-heading1::after{
     content: 'Our Expertize & Services';
@@ -486,7 +490,8 @@
     background: white;
     position: absolute;
     top: 39px;
-    left: 45%;
+    transform: translateX(-50%);
+    left: 50%;
 }
 
 
@@ -504,40 +509,76 @@
     padding: 5% 3%;
     
 }
+.container_img{
+    position: relative;
+    padding: 4%;
+}
+
+.home_img{
+    width: 100%;
+}
+
+.container_text_heading{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.upper{
+    position: absolute;
+    width: 25%;
+    height: 8px;
+    background: #222;
+    top: 40px;
+}
+
+.right{
+    position: absolute;
+    width: 8px;
+    height: 25%;
+    background: #222;
+    bottom: 49px;
+    right: 40px;
+}
+
+.bottom1{
+    position: absolute;
+    width: 45%;
+    height: 8px !important;
+    background: #222;
+    bottom: 40px;
+    right: 40px;
+}
+
+.oval1{
+    position: absolute;
+    top: 40px;
+    right: 20%;
+}
+
+.oval2{
+    position: absolute;
+    bottom: 0px;
+    left: 10%;
+}
+
+.btn5{
+    background: #222;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 5%;
+    border-radius: 10px;
+}
 
 @media only screen and (max-width: 1300px) {
-    .home-product-heading1::before{
-        left: 41%;
-    }
-    .home-product-heading1::after{
-        left: 44%;
-    }
+    
    
 }
 
 @media only screen and (max-width: 1100px) {
-    .about-product-heading2::before{
-        top: 49px;
-        left: 41%;
-    }
-    .about-product-heading2::after{
-    
-        left: 45%;
-    }   
-    .home-product-heading1::before{
-        left: 39%;
-    }
-    .home-product-heading1::after{
-        left: 43%;
-    }
+
 }
 
 @media only screen and (max-width: 900px) {
-    /* .project_box{
-        width: 120px;
-        padding: 20px 0;
-        font-size: 18px;
-    } */
     .contact_container{
         margin:10px 15%;
     }
@@ -546,24 +587,6 @@
     }
     .top-container{
         padding: 0 4%;
-    }
-    .about-product-heading::before{
-        top: 49px;
-        left: 34%;
-    }
-    .about-product-heading2::before{
-        top: 49px;
-        left: 40%;
-    }
-    .about-product-heading2::after{
-    
-        left: 44%;
-    }
-    .home-product-heading1::before{
-        left: 37%;
-    }
-    .home-product-heading1::after{
-        left: 41%;
     }
 }
 
@@ -577,11 +600,6 @@
     .contact_container{
         margin:10px 5%;
     }
-    /* .project_box{
-        width: 100px;
-        padding: 15px 0;
-        font-size: 18px;
-    } */
     .logo{
         width: 20%;
     }
@@ -595,20 +613,7 @@
     .rheading{
         font-size: 1.5rem;
     }
-    .about-product-heading2::before{
-        top: 49px;
-        left: 35%;
-    }
-    .about-product-heading2::after{
     
-        left: 41%;
-    }
-    .home-product-heading1::before{
-        left: 30%;
-    }
-    .home-product-heading1::after{
-        left: 36%;
-    }
   }
 
   @media only screen and (max-width: 480px) {
@@ -618,34 +623,9 @@
     .top-container{
         padding: 0 5%;
     }
-    .about-product-heading::before{
-        top: 49px;
-        left: 29%;
-    }
-    .about-product-heading::after{
-        left: 38%;
-    }
-    .about-product-heading2::before{
-        top: 49px;
-        left: 25%;
-    }
-    .about-product-heading2::after{
-    
-        left: 35%;
-    }
-    .home-product-heading1::before{
-        left: 25%;
-    }
-    .home-product-heading1::after{
-        left: 33%;
-    }
+   
   }
 
   @media only screen and (max-width: 480px) {
-    .home-product-heading1::before{
-        left: 18%;
-    }
-    .home-product-heading1::after{
-        left: 28%;
-    }
-  }
+    
+}
