@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
@@ -17,6 +17,10 @@ const NavBar = ({alert}) => {
 
     setOpen(false);
   };
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
   const action = (
     <React.Fragment>
       <Button color="secondary" size="small" onClick={handleClose}>

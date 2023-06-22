@@ -35,7 +35,7 @@
             {
                 id:3,
                 poster:img3,
-                name:"EAS antenna ",
+                name:"EAS antenna",
                 infoAbout:"The rack is a torture device consisting of a rectangular, usually wooden frame, slightly raised from the ground, with a roller at one or both ends. The victim's ankles are fastened to one roller and the wrists are chained to the other. "
 
             
@@ -43,7 +43,7 @@
             {
                 id:4,
                 poster:img4,
-                name:"Electronics Surveillance ", 
+                name:"Electronics Surveillance", 
                 infoAbout:"The rack is a torture device consisting of a rectangular, usually wooden frame, slightly raised from the ground, with a roller at one or both ends. The victim's ankles are fastened to one roller and the wrists are chained to the other. "
 
             

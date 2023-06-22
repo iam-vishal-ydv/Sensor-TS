@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { Link } from 'react-router-dom';
 import { Grid } from '@mui/material';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export default function About() {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
   return (
     <>
     <a href="https://api.whatsapp.com/send?phone=916398474181&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp'/></a>
