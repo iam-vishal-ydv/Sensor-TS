@@ -129,9 +129,10 @@
     *background: url('images/background.png');
     *background-size: cover;
     *background-repeat: no-repeat;
-    background: white;
+    /* background: white; */
     height: 100vh;
     color: black;
+    z-index: 999;
 }
 
 .text_style {
@@ -568,6 +569,20 @@
     margin-top: 5%;
     border-radius: 10px;
 }
+
+.homeImages{
+
+
+    background-image: url("https://images.pexels.com/photos/3692887/pexels-photo-3692887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+
+
+    background-size: cover;
+      opacity: 0.25;
+    
+    
+
+}
+
 
 @media only screen and (max-width: 1300px) {
     

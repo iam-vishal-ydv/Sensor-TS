@@ -8,6 +8,7 @@ import img10 from '../../assets/Digital-Signage.jpeg'
 import Oval1 from '../../assets/Oval (3).png'
 import Oval2 from '../../assets/Oval (4).png'
 import { useNavigate } from "react-router";
+ import '../../index.css'
 export default function Home({ setAlert }) {
   const navigate = useNavigate()
 
@@ -18,8 +19,12 @@ export default function Home({ setAlert }) {
   return (
     <>
       <a href="https://api.whatsapp.com/send?phone=916398474181&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp' /></a>
-      <div className="header">
-        <Grid container className="pt-12 bg-white">
+      <div className="header   ">
+
+      <div className="absolute w-full h-full   homeImages   bg-gradient-to-t from-black   ">
+        {" "}
+      </div>
+        <Grid container className="pt-12 ">
           <Grid item md={12} className="px-3 text-center ">
             <h2 className=" mt-5 pt-12 text_style">
               Welcome to <br />
