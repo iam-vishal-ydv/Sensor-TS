@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import ContactFields from '../ContactUs/ContactFields';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import CallIcon from '@mui/icons-material/Call';
 
 export default function OurSolutions({data}) {
     useEffect(()=>{
@@ -13,7 +14,7 @@ export default function OurSolutions({data}) {
     <>
     <a href="https://api.whatsapp.com/send?phone=916398474181&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp' /></a>
     <div className=' pt-3 path'><Link className='text-xl text-gray-600' to='/Sensor-TS/'>Home</Link>&nbsp;&nbsp; <ArrowForwardIosIcon sx={{ fontSize: '18px' }} />&nbsp;&nbsp;<Link className='text-xl text-gray-600' to='/Sensor-TS/our-solutions'>Our Solutions</Link> </div>
-
+    <a href="tel:+916398474181" className="call"><CallIcon /></a>
 
 
 

@@ -2,12 +2,7 @@ import React, { useEffect } from 'react'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import img1 from '../../assets/rack1.jpeg'
-import img2 from '../../assets/POS-Billing-System.jpeg'
-import img3 from '../../assets/EAS-Antena.jpeg'
-import img4 from '../../assets/Electronics-surveillance.jpeg'
-import img5 from '../../assets/Air-Curtain.jpeg'
-import img6 from '../../assets/Billing-Software.jpeg'
+import CallIcon from '@mui/icons-material/Call';
 import { Grid } from '@mui/material';
 import ContactFields from '../ContactUs/ContactFields';
 import { AllData } from '../../Data/data';
@@ -24,6 +19,7 @@ export default function SingleProduct({ setAlert }) {
 
   return (
     <>
+       <a href="tel:+916398474181" className="call"><CallIcon /></a>
       <a href="https://api.whatsapp.com/send?phone=916398474181&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp' /></a>
       <div className=' pt-3 path'><Link className='text-xl text-gray-600' to='/Sensor-TS/'>Home</Link>&nbsp;&nbsp; <ArrowForwardIosIcon sx={{ fontSize: '18px' }} />&nbsp;&nbsp;<Link className='text-xl text-gray-600' to='/Sensor-TS/retail-projects'>Retail Projects</Link> &nbsp;&nbsp; <ArrowForwardIosIcon sx={{ fontSize: '18px' }} />&nbsp;&nbsp;<span className='text-xl text-gray-700'>{id}</span></div>
       <Grid container py={3}>

@@ -4,7 +4,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 // import { Grid } from '@mui/material';
 import ContactFields from '../ContactUs/ContactFields';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-
+import CallIcon from '@mui/icons-material/Call';
 
 
 
@@ -17,7 +17,7 @@ export default function SingleProject({ data }) {
         <>
             <a href="https://api.whatsapp.com/send?phone=916398474181&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp' /></a>
             <div className=' pt-3 path'><Link className='text-xl text-gray-600' to='/Sensor-TS/'>Home</Link>&nbsp;&nbsp; <ArrowForwardIosIcon sx={{ fontSize: '18px' }} />&nbsp;&nbsp;<Link className='text-xl text-gray-600' to='/Sensor-TS/retail-projects'>Retail Projects</Link> </div>
-
+            <a href="tel:+916398474181" className="call"><CallIcon /></a>
 
 
 
