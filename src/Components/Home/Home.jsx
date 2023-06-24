@@ -12,9 +12,9 @@ import { useNavigate } from "react-router";
 export default function Home({ setAlert }) {
   const navigate = useNavigate()
 
-  useEffect(() => {
-
-  }, [])
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
 
   return (
     <>
@@ -82,11 +82,13 @@ export default function Home({ setAlert }) {
       </Grid>
 
       <Grid container>
-        <Grid item md={6} sm={12} xs={12} className="container_img">
-          <img src={img10} className="home_img"/>
+        <Grid item md={6} sm={12} xs={12} className="">
+         <div className="container_img">
+         <img src={img10} className="home_img"/>
           <div className="upper"></div>
           <div className="right"></div>
           <div className="bottom1"></div>
+         </div>
         </Grid>
         <Grid item md={6} sm={12} xs={12} className="pt-28" style={{position:'relative',padding:'8% 5%'}}>
           <div className="container_text_heading">Start Bussines With <br/>Us</div>

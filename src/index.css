@@ -529,7 +529,7 @@
     width: 25%;
     height: 8px;
     background: #222;
-    top: 40px;
+    top: 2%;
 }
 
 .right{
@@ -537,8 +537,8 @@
     width: 8px;
     height: 25%;
     background: #222;
-    bottom: 49px;
-    right: 40px;
+    bottom: 2%;
+    right: 1%;
 }
 
 .bottom1{
@@ -546,8 +546,8 @@
     width: 45%;
     height: 8px !important;
     background: #222;
-    bottom: 40px;
-    right: 40px;
+    bottom: 2%;
+    right: 1%;
 }
 
 .oval1{
