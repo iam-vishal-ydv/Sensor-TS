@@ -2,28 +2,30 @@ import { Grid } from "@mui/material";
 import React, { useEffect } from "react";
 import ContactFields from "../ContactUs/ContactFields";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import CallIcon from '@mui/icons-material/Call';
 import { AllData } from "../../Data/data";
 import { Cards } from "../Retail Projects/RetailProjects";
 import img10 from '../../assets/Digital-Signage.jpeg'
 import Oval1 from '../../assets/Oval (3).png'
 import Oval2 from '../../assets/Oval (4).png'
 import { useNavigate } from "react-router";
- import '../../index.css'
+import '../../index.css'
 export default function Home({ setAlert }) {
   const navigate = useNavigate()
 
-  useEffect(()=>{
+  useEffect(() => {
     window.scrollTo(0, 0);
-  },[])
+  }, [])
 
   return (
     <>
       <a href="https://api.whatsapp.com/send?phone=916398474181&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp' /></a>
-      <div className="header   ">
+      <a href="tel:+916398474181" className="call"><CallIcon /></a>
+      <div className="header">
 
-      <div className="absolute w-full h-full   homeImages   bg-gradient-to-t from-black   ">
-        {" "}
-      </div>
+        <div className="absolute w-full h-full   homeImages   bg-gradient-to-t from-black   ">
+          {" "}
+        </div>
         <Grid container className="pt-12 ">
           <Grid item md={12} className="px-3 text-center ">
             <h2 className=" mt-5 pt-12 text_style">
@@ -83,19 +85,19 @@ export default function Home({ setAlert }) {
 
       <Grid container>
         <Grid item md={6} sm={12} xs={12} className="">
-         <div className="container_img">
-         <img src={img10} className="home_img"/>
-          <div className="upper"></div>
-          <div className="right"></div>
-          <div className="bottom1"></div>
-         </div>
+          <div className="container_img">
+            <img src={img10} className="home_img" />
+            <div className="upper"></div>
+            <div className="right"></div>
+            <div className="bottom1"></div>
+          </div>
         </Grid>
-        <Grid item md={6} sm={12} xs={12} className="pt-28" style={{position:'relative',padding:'8% 5%'}}>
-          <div className="container_text_heading">Start Bussines With <br/>Us</div>
-          <div className="container_text text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate a, <br/> deleniti perspiciatis doloribus quaerat rem consequatur quam,<br/><br/> eveniet, numquam cumque necessitatibus neque non sapiente voluptatum libero<br/> iure aspernatur laboriosam.</div>
-          <button className="btn5" onClick={()=>navigate('/Sensor-TS/contact')}>Contact us</button>
-          <img src={Oval1} className="oval1"/>
-          <img src={Oval2} className="oval2"/>
+        <Grid item md={6} sm={12} xs={12} className="pt-28" style={{ position: 'relative', padding: '8% 5%' }}>
+          <div className="container_text_heading">Start Bussines With <br />Us</div>
+          <div className="container_text text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate a, <br /> deleniti perspiciatis doloribus quaerat rem consequatur quam,<br /><br /> eveniet, numquam cumque necessitatibus neque non sapiente voluptatum libero<br /> iure aspernatur laboriosam.</div>
+          <button className="btn5" onClick={() => navigate('/Sensor-TS/contact')}>Contact us</button>
+          <img src={Oval1} className="oval1" />
+          <img src={Oval2} className="oval2" />
         </Grid>
       </Grid>
 

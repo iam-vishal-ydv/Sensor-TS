@@ -23,6 +23,18 @@
     color: white;
 }
 
+.call{
+    z-index: 999;
+    padding: 15px;
+    background: #756cf7;
+    border-radius: 100%;
+    position: fixed;
+    cursor: pointer;
+    right: 100px;
+    bottom: 40px;
+    color: white;
+}
+
 .mapouter{
     position:relative;
     text-align:right;
