@@ -414,9 +414,32 @@
     font-weight: 600;
   }
 .about-product-heading1{
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 600;
 }
+
+.about-product-heading1::before{
+    content: ' ';
+    width: 190px;
+    height: 3px;
+    background: #222;
+    position: absolute;
+    top: 49px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about-product-heading1::after{
+    content: 'Recommended By Us';
+    font-size: 14px;
+    padding: 0 5px;
+    color: crimson;
+    background: white;
+    position: absolute;
+    top: 39px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
 
 .about-product-heading2::before{
     content: ' ';

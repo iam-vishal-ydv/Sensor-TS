@@ -12,6 +12,7 @@
   import img11 from '../assets/Biometric.jpeg'
   import img12 from '../assets/RFID-Inventory.jpeg'
   import img13 from '../assets/Face-Detection.jpeg'
+  import img14 from '../assets/IT-Equipments.jpeg'
 
 
   export  const AllData=[
@@ -73,6 +74,14 @@
             
             },
             {
+                id:12,
+                poster:img14,
+                name:"IT Equipments",
+                infoAbout:"The rack is a torture device consisting of a rectangular, usually wooden frame, slightly raised from the ground, with a roller at one or both ends. The victim's ankles are fastened to one roller and the wrists are chained to the other. "
+
+            
+            },
+            {
                 id:8,
                 poster:img8,
                 name:"Audio System",
@@ -108,24 +117,24 @@
 
             
             },
-            {
-                id:12,
-                poster:img12,
-                name:"RFID-Inventory",
+            // {
+            //     id:12,
+            //     poster:img12,
+            //     name:"RFID-Inventory",
                 
-                infoAbout:"The rack is a torture device consisting of a rectangular, usually wooden frame, slightly raised from the ground, with a roller at one or both ends. The victim's ankles are fastened to one roller and the wrists are chained to the other. "
+            //     infoAbout:"The rack is a torture device consisting of a rectangular, usually wooden frame, slightly raised from the ground, with a roller at one or both ends. The victim's ankles are fastened to one roller and the wrists are chained to the other. "
 
             
-            },
-            {
-                id:13,
-                poster:img13,
-                name:"Face Detection",
+            // },
+            // {
+            //     id:13,
+            //     poster:img13,
+            //     name:"Face Detection",
                 
-                infoAbout:"The rack is a torture device consisting of a rectangular, usually wooden frame, slightly raised from the ground, with a roller at one or both ends. The victim's ankles are fastened to one roller and the wrists are chained to the other. "
+            //     infoAbout:"The rack is a torture device consisting of a rectangular, usually wooden frame, slightly raised from the ground, with a roller at one or both ends. The victim's ankles are fastened to one roller and the wrists are chained to the other. "
 
             
-            }
+            // }
 
             
 
