@@ -55,6 +55,11 @@ const NavBar = ({alert}) => {
     },
     {
       id: 4,
+      links: "/Sensor-TS/our-solutions",
+      name: "Our Solutions",
+    },
+    {
+      id: 5,
       links: "/Sensor-TS/contact",
       name: "Contact Us",
     },
