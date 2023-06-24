@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import ContactFields from './ContactFields'
 import { Grid } from '@mui/material'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
@@ -8,6 +8,9 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export default function ContactUs({setAlert,alert}) {
 
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+      },[])
     return (
         <>
         <a href="https://api.whatsapp.com/send?phone=916398474181&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp'/></a>

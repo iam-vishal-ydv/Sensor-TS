@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 // import { Grid } from '@mui/material';
@@ -9,8 +9,9 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 
 export default function SingleProject({ data }) {
-    const { id } = useParams()
-    const navigate = useNavigate()
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+      },[])
 
     return (
         <>
@@ -32,7 +33,7 @@ export default function SingleProject({ data }) {
                     return <React.Fragment key={item.id}>
 
 
-                        <di ><Cards image={item.poster} name={item.name} infoAbout={item.infoAbout}></Cards> </di>
+                        <di ><Cards image={item.poster} name={item.name} infoAbout={item.infoAbout} id={item.id}></Cards> </di>
                     </React.Fragment>
 
                 })}
@@ -56,7 +57,7 @@ export default function SingleProject({ data }) {
 
 export const Cards = ({ image, name, infoAbout }) => {
 
-    console.log(image, "hello")
+   const navigate = useNavigate()
     return <>
 
 
@@ -75,11 +76,11 @@ export const Cards = ({ image, name, infoAbout }) => {
  
   </a> */}
 
-                <a href="#_" class="relative inline-flex items-center justify-center px-5 py-2 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
+                <span  class="relative inline-flex items-center justify-center px-5 py-2 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group" onClick={()=>navigate(`/Sensor-TS/retail-projects/singleproduct/${name}`)}>
                     <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-red-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
                     <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
                     <span class="relative"> Read More..</span>
-                </a>
+                </span>
             </div>
 
         </div>
