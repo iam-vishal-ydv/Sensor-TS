@@ -1,6 +1,7 @@
 import { Grid } from "@mui/material";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ContactFields from "../ContactUs/ContactFields";
+import CallIcon from '@mui/icons-material/Call';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { AllData } from "../../Data/data";
 import { Cards } from "../Retail Projects/RetailProjects";
@@ -8,8 +9,14 @@ import img10 from '../../assets/Digital-Signage.jpeg'
 import Oval1 from '../../assets/Oval (3).png'
 import Oval2 from '../../assets/Oval (4).png'
 import { useNavigate } from "react-router";
- import '../../index.css'
+import '../../index.css'
+import  CountUp from  'react-countup'
+import ScrollTrigger from "react-scroll-trigger";
+
 export default function Home({ setAlert }) {
+
+    const [counter,setCounter]=useState(false)
+   
   const navigate = useNavigate()
 
   useEffect(()=>{
@@ -18,15 +25,16 @@ export default function Home({ setAlert }) {
 
   return (
     <>
-      <a href="https://api.whatsapp.com/send?phone=916398474181&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp' /></a>
-      <div className="header   ">
+       <a href="https://api.whatsapp.com/send?phone=916398474181&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp' /></a>
+       <a href="tel:+916398474181" className="call"><CallIcon /></a>
+      <div className="header  flex  justify-center items-center  ">
 
-      <div className="absolute w-full h-full   homeImages   bg-gradient-to-t from-black   ">
+      <div className="absolute w-full h-full   homeImages  bg-black  bg-gradient-to-t from-black   ">
         {" "}
       </div>
-        <Grid container className="pt-12 ">
+        <Grid container className="  ">
           <Grid item md={12} className="px-3 text-center ">
-            <h2 className=" mt-5 pt-12 text_style">
+            <h2 className=" mt-0 pt-0 text_style">
               Welcome to <br />
               <div className=" w-[335px] h-11 m-auto">
                 <h1 className="animate-typing overflow-hidden m-auto whitespace-nowrap border-r-4 border-r-white  text-3xl font-bold " style={{ color: 'crimson' }}>
@@ -57,25 +65,27 @@ export default function Home({ setAlert }) {
           </div>
         </Grid>
       </Grid>
-      <Grid container py={10} sx={{ background: '#f1f1f1' }} >
+      <Grid container py={10} sx={{ background: '#f1f1f1' }}  data-aos="fade-up">
         <Grid item md={4} sm={12} xs={12} className="text-center" px={3}>
           <div className="border py-2 mb-2" style={{ borderRadius: '30px' }}>
             <div style={{ fontSize: '3em', fontWeight: '600' }}>Clients</div>
-            <div style={{ fontSize: '2em' }}>500+</div>
+            <div style={{ fontSize: '2em' }}>
+            
+          <ScrollTrigger onEnter={()=> setCounter(true)} onExit={()=>setCounter(false)}>   {counter &&  <CountUp start={0}  end={500} duration={2} delay={0}></CountUp>  }+   </ScrollTrigger>  </div>
             <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nesciunt.</div>
           </div>
         </Grid>
         <Grid item md={4} sm={12} xs={12} className="text-center" px={3}>
           <div className="border py-2 mb-2" style={{ borderRadius: '30px' }}>
             <div style={{ fontSize: '3em', fontWeight: '600' }}>Completed Projects</div>
-            <div style={{ fontSize: '2em' }}>100+</div>
+            <div style={{ fontSize: '2em' }}>      <ScrollTrigger onEnter={()=> setCounter(true)} onExit={()=>setCounter(false)}>   {counter &&  <CountUp start={0}  end={100} duration={2} delay={0}></CountUp>  }+   </ScrollTrigger> </div>
             <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nesciunt.</div>
           </div>
         </Grid>
         <Grid item md={4} sm={12} xs={12} className="text-center" px={3}>
           <div className="border py-2 mb-2" style={{ borderRadius: '30px' }}>
             <div style={{ fontSize: '3em', fontWeight: '600' }}>Clients</div>
-            <div style={{ fontSize: '2em' }}>500+</div>
+            <div style={{ fontSize: '2em' }}>     <ScrollTrigger onEnter={()=> setCounter(true)} onExit={()=>setCounter(false)}>   {counter &&  <CountUp start={0}  end={500} duration={2} delay={0}></CountUp>  }+   </ScrollTrigger></div>
             <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nesciunt.</div>
           </div>
         </Grid>
