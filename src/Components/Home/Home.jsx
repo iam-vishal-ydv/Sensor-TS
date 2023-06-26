@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import ContactFields from "../ContactUs/ContactFields";
 import CallIcon from '@mui/icons-material/Call';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import CallIcon from '@mui/icons-material/Call';
 import { AllData } from "../../Data/data";
 import { Cards } from "../Retail Projects/RetailProjects";
 import img10 from '../../assets/Digital-Signage.jpeg'
