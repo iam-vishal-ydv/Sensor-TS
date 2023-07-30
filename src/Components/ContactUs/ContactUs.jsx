@@ -14,8 +14,8 @@ export default function ContactUs({setAlert,alert}) {
       },[])
     return (
         <>
-         <a href="tel:+916398474181" className="call"><CallIcon /></a>
-        <a href="https://api.whatsapp.com/send?phone=916398474181&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp'/></a>
+         <a href="tel:+919717689571" className="call"><CallIcon /></a>
+        <a href="https://api.whatsapp.com/send?phone=919717689571&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp'/></a>
         <div className=' pt-3 path'><Link className='text-lg text-gray-600' to='/Sensor-TS/'>Home</Link>&nbsp;&nbsp; <ArrowForwardIosIcon sx={{fontSize:'16px'}}/>&nbsp;&nbsp; <span className='text-lg text-gray-700'>Contact Us</span></div>
             <Grid container>
                 <Grid item md={6} px={5} py={3} sm={12} xs={12}>

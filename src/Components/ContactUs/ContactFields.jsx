@@ -10,9 +10,9 @@ export default function ContactFields({setAlert}) {
         // console.log(data.current)
         emailjs.sendForm('service_1bq0usj', 'template_m85142v', data.current, 'XdgoOlRQy8sv7MUuc')
             .then((result) => {
-                console.log(result.text);
                 setOpen(false)
                 setAlert(true)
+                window.location.reload()
             }, (error) => {
                 console.log(error.text);
                 setOpen(false)

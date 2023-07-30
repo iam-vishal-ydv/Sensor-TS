@@ -25,8 +25,8 @@ export default function Home({ setAlert }) {
 
   return (
     <>
-       <a href="https://api.whatsapp.com/send?phone=916398474181&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp' /></a>
-       <a href="tel:+916398474181" className="call"><CallIcon /></a>
+       <a href="https://api.whatsapp.com/send?phone=919717689571&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp' /></a>
+       <a href="tel:+919717689571" className="call"><CallIcon /></a>
       <div className="header  flex  justify-center items-center  ">
 
       <div className="absolute w-full h-full   homeImages  bg-black  bg-gradient-to-t from-black   ">
@@ -37,15 +37,14 @@ export default function Home({ setAlert }) {
             <h2 className=" mt-0 pt-0 text_style">
               Welcome to <br />
               <div className=" w-[335px] h-11 m-auto">
-                <h1 className="animate-typing overflow-hidden m-auto whitespace-nowrap border-r-4 border-r-white  text-3xl font-bold " style={{ color: 'crimson' }}>
-                  Cencertek Solutions
+                <h1 className="animate-typing overflow-hidden m-auto whitespace-nowrap border-r-4 border-r-white  text-4xl font-bold " style={{ color: 'crimson' }}>
+                  HYPER RETAIL
                 </h1>
               </div>
             </h2>
             <div className="text-div">
               <span className="description ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                maxime inventore a aspernatur animi mollitia?
+              We deals in Supermarket display racks, Apparels display racks, Vegetable racks, MDF shelves racks, Italian top cash counter, Nut bolts less slotted angle racks and may more in partner with Star Interior PVT LTD. 
               </span>
             </div>
           </Grid>
@@ -102,7 +101,7 @@ export default function Home({ setAlert }) {
         </Grid>
         <Grid item md={6} sm={12} xs={12} className="pt-28" style={{ position: 'relative', padding: '8% 5%' }}>
           <div className="container_text_heading">Start Bussines With <br />Us</div>
-          <div className="container_text text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate a, <br /> deleniti perspiciatis doloribus quaerat rem consequatur quam,<br /><br /> eveniet, numquam cumque necessitatibus neque non sapiente voluptatum libero<br /> iure aspernatur laboriosam.</div>
+          <div className="container_text text-gray-800">We deals in Supermarket display racks, Apparels display racks, Vegetable racks, MDF shelves racks, Italian top cash counter, Nut bolts less slotted angle racks and may more in partner with Star Interior PVT LTD. <br/><br/> We work and supply pan India and have office in Delhi/NCR, Patna, Durgapur, Raipur, Secundrabad, Hyderabad.</div>
           <button className="btn5" onClick={() => navigate('/Sensor-TS/contact')}>Contact us</button>
           <img src={Oval1} className="oval1" />
           <img src={Oval2} className="oval2" />
@@ -119,7 +118,8 @@ export default function Home({ setAlert }) {
         <Grid item md={6} xs={12} p={2}>
           <div class="mapouter">
             <div class="gmap_canvas">
-              <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q= Marg 155, Vikas Marg, Veer Savarkar Block, Block U, Shakarpur Khas, New Delhi, Delhi 110092&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe>
+            <iframe width="100%" height="100%" id="gmap_canvas" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=H.No.8, Supermarket display rack, 2-213, Kummarguda Rd, opp. Regional Passport Office, Shivaji Nagar, Secunderabad, Telangana 500003&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+              {/* <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q= Marg 155, Vikas Marg, Veer Savarkar Block, Block U, Shakarpur Khas, New Delhi, Delhi 110092&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe> */}
             </div>
           </div>
         </Grid>

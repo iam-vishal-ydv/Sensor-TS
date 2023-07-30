@@ -19,8 +19,8 @@ export default function SingleProduct({ setAlert }) {
 
   return (
     <>
-       <a href="tel:+916398474181" className="call"><CallIcon /></a>
-      <a href="https://api.whatsapp.com/send?phone=916398474181&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp' /></a>
+       <a href="tel:+919717689571" className="call"><CallIcon /></a>
+      <a href="https://api.whatsapp.com/send?phone=919717689571&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp' /></a>
       <div className=' pt-3 path'><Link className='text-xl text-gray-600' to='/Sensor-TS/'>Home</Link>&nbsp;&nbsp; <ArrowForwardIosIcon sx={{ fontSize: '18px' }} />&nbsp;&nbsp;<Link className='text-xl text-gray-600' to='/Sensor-TS/retail-projects'>Retail Projects</Link> &nbsp;&nbsp; <ArrowForwardIosIcon sx={{ fontSize: '18px' }} />&nbsp;&nbsp;<span className='text-xl text-gray-700'>{id}</span></div>
       <Grid container py={3}>
         <Grid item md={6} className='px-4'>

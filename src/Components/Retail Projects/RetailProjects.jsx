@@ -15,9 +15,9 @@ export default function SingleProject({ data }) {
 
     return (
         <>
-            <a href="https://api.whatsapp.com/send?phone=916398474181&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp' /></a>
+            <a href="https://api.whatsapp.com/send?phone=919717689571&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp' /></a>
             <div className=' pt-3 path'><Link className='text-xl text-gray-600' to='/Sensor-TS/'>Home</Link>&nbsp;&nbsp; <ArrowForwardIosIcon sx={{ fontSize: '18px' }} />&nbsp;&nbsp;<Link className='text-xl text-gray-600' to='/Sensor-TS/retail-projects'>Retail Projects</Link> </div>
-            <a href="tel:+916398474181" className="call"><CallIcon /></a>
+            <a href="tel:+919717689571" className="call"><CallIcon /></a>
 
 
 
@@ -76,10 +76,10 @@ export const Cards = ({ image, name, infoAbout }) => {
  
   </a> */}
 
-                <span  class="relative inline-flex items-center justify-center px-5 py-2 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group" onClick={()=>navigate(`/Sensor-TS/retail-projects/singleproduct/${name}`)}>
+                <span  class="relative inline-flex items-center justify-center px-5 py-2 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group" onClick={()=>navigate(`/Sensor-TS/contact`)}>
                     <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-red-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
                     <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
-                    <span class="relative"> Read More..</span>
+                    <span class="relative"> Contact For More Info</span>
                 </span>
             </div>
 
