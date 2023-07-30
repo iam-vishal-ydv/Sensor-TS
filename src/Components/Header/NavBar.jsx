@@ -69,12 +69,7 @@ const NavBar = ({alert}) => {
     <>
       <div className="flex z-50  justify-around items-center w-full h-20 px-4 text-black bg-gray-100 sticky top-0">
         <div>
-          <h1
-            className="text-xl text-black font-bold pointer"
-            onClick={() => navigate("/Sensor-TS/")}
-          >
-           <img src='images/STSLogo.png' className="logo"/>
-          </h1>
+           <img  onClick={() => navigate("/Sensor-TS/")} src='/images/Hyper-retail.jpg' className="logo"/>
         </div>
 
         <ul className="hidden md:flex">
