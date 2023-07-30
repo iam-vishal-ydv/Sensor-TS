@@ -53,11 +53,7 @@ const NavBar = ({alert}) => {
       links: "/Sensor-TS/retail-projects",
       name: "Retail Projects",
     },
-    {
-      id: 4,
-      links: "/Sensor-TS/our-solutions",
-      name: "Our Solutions",
-    },
+  
     {
       id: 5,
       links: "/Sensor-TS/contact",
@@ -67,16 +63,16 @@ const NavBar = ({alert}) => {
 
   return (
     <>
-      <div className="flex z-50  justify-around items-center w-full h-20 px-4 text-black bg-gray-100 sticky top-0">
-        <div>
-           <img  onClick={() => navigate("/Sensor-TS/")} src='/images/Hyper-retail.jpg' className="logo"/>
-        </div>
+      <div className="flex z-50  px-10  justify-between items-center w-full h-20  text-black bg-gray-100 sticky top-0">
+       <div className="w-20">
+           <img  onClick={() => navigate("/Sensor-TS/")} src='/images/Hyper-retail.jpg' className="logo bg-black "/>
+           </div>
 
-        <ul className="hidden md:flex">
+        <ul className="hidden md:flex ">
           {links.map((item) => {
             return (
               <li
-                className="px-4 cursor-pointer capitalize font-medium text-black hover:scale-105 duration-200"
+                className="px-4 cursor-pointer capitalize  xl:text-lg lg:text-lg md:text-sm sm:text-sm  text-sm    font-medium text-black hover:scale-105 duration-200"
                 key={item.id}
               >
                 <Link to={item.links} smooth duration={500}>
@@ -101,13 +97,13 @@ const NavBar = ({alert}) => {
 
         {navBar && (
           <ul
-            className=" flex  flex-col  gap-y-5 text-2xl justify-center items-center absolute top-0 left-0 w-full h-screen bg-white text-black hover:text-orange-400
+            className=" flex  flex-col   gap-y-5 text-2xl justify-center items-center absolute top-0 left-0 w-full h-screen bg-white text-black hover:text-orange-400
          "
           >
             {links.map((item) => {
               return (
                 <li
-                  className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
+                  className="px-4 cursor-pointer capitalize    font-medium text-gray-500 hover:scale-105 duration-200"
                   key={item.id}
                 >
                   <Link
@@ -125,6 +121,13 @@ const NavBar = ({alert}) => {
           </ul>
         )}
       </div>
+
+
+             
+
+
+
+
       {/* {!alert?<Alert   severity="success">Email Send Succesfully</Alert>:''} */}
       <Snackbar
         open={alert}
