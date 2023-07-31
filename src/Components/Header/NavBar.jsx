@@ -65,7 +65,7 @@ const NavBar = ({alert}) => {
     <>
       <div className="flex z-50  px-10  justify-between items-center w-full h-20  text-black bg-gray-100 sticky top-0">
        <div className="w-20">
-           <img  onClick={() => navigate("/Sensor-TS/")} src='/images/Hyper-retail.jpg' className="logo bg-black "/>
+           <img  onClick={() => navigate("/Sensor-TS/")} src='/images/Hyper-retail.jpg' className="logo bg-black " alt="logo"/>
            </div>
 
         <ul className="hidden md:flex ">
