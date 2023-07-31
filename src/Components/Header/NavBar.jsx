@@ -4,6 +4,8 @@ import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import { Alert, Button, IconButton, Snackbar } from "@mui/material";
 import CloseIcon from '@mui/icons-material/Close';
+import  logo from '../../assets/Hyper-retail.jpg'
+
 
 const NavBar = ({alert}) => {
   const navigate = useNavigate();
@@ -65,7 +67,7 @@ const NavBar = ({alert}) => {
     <>
       <div className="flex z-50  px-10  justify-between items-center w-full h-20  text-black bg-gray-100 sticky top-0">
        <div className="w-20">
-           <img  onClick={() => navigate("/Sensor-TS/")} src='/images/Hyper-retail.jpg' className="logo bg-black " alt="logo"/>
+           <img  onClick={() => navigate("/Sensor-TS/")} src={logo} className="logo bg-black " alt="logo"/>
            </div>
 
         <ul className="hidden md:flex ">
