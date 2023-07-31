@@ -67,7 +67,7 @@ const NavBar = ({alert}) => {
     <>
       <div className="flex z-50  px-10  justify-between items-center w-full h-20  text-black bg-gray-100 sticky top-0">
        <div className="w-20">
-           <img  src={logo} className="logo bg-black " alt="logo"/>
+           <img  src={logo} className="logo bg-black " onClick={()=>navigate('/Sensor-TS/')} alt="logo"/>
            </div>
 
         <ul className="hidden md:flex ">
