@@ -64,10 +64,10 @@ export const Cards = ({ image, name, infoAbout }) => {
         <div data-aos="fade-up"
             data-aos-anchor-placement="center-bottom" class="max-w-sm bg-white  lg:w-72  shadow-md   cursor-pointer     border border-gray-200 rounded-md ">
             <a href="#">
-                <img class="rounded-t-lg   w-80  h-72  bg-cover  " src={image} alt="" />
+                <img class="rounded-t-lg  h-60 w-full " src={image} alt="" />
             </a>
             <div className="p-5">
-                <a href="#">
+                <a >
                     <h5 className="mb-2 text-xl font-bold text-black ">{name}</h5>
                 </a>
                 <p className="mb-3 font-normal  text-base  ">{infoAbout}</p>

@@ -8,21 +8,23 @@ import { AiFillInstagram } from 'react-icons/ai';
 import { BsFacebook } from 'react-icons/bs';
 import { BsTwitter } from 'react-icons/bs';
 import { BiCopyright } from 'react-icons/bi';
+import { useNavigate } from 'react-router-dom';
 
 export default function Footer() {
+  const navigate = useNavigate()
   return (
     <>
     <div className='main bg-gray-900  '> 
     <Grid container className='text-white py-4'>
       <Grid item md={4} sm={12} xs={12} className='px-2'>
-        <div className='main_heading py-3 text-green-700'>Sensor Tech Solution</div>
+        <div className='main_heading py-3 text-green-700'>Hyper Retail</div>
         <div className='py-3 address'>
         <span style={{display:'flex',alignItems:'center'}}><LocationOnIcon/> &nbsp;<span className='text-gray-400'> <span>H.No.8-2-213, Opp. Regional Passport Office, Kummerguda, Secunderabad - 500003</span></span></span>
         <span className='text-gray-400'><LocalPhoneIcon/> <span>+91-9717689571</span></span>
         <span className='text-gray-400'><EmailIcon/> <span> sales@hyperretail.in</span></span>
         </div>
       </Grid>
-      <Grid item md={4} sm={6} xs={6} className='px-2'>
+      {/* <Grid item md={4} sm={6} xs={6} className='px-2'>
       <div className='main_heading2 py-3'>Products</div>
       <div className='py-3 address'>
         <span className='text-gray-400 pointer'><KeyboardDoubleArrowRightIcon/> Shirt</span>
@@ -32,25 +34,25 @@ export default function Footer() {
         <span className='text-gray-400 pointer'><KeyboardDoubleArrowRightIcon/> Shoes</span>
         <span className='text-gray-400 pointer'><KeyboardDoubleArrowRightIcon/> Belts</span>
         </div>
-      </Grid>
-      <Grid item md={4} sm={6} xs={6}className='px-2'>
+      </Grid> */}
+      <Grid item md={4} sm={12} xs={12}className='px-2'>
       <div className='main_heading2 py-3'>Further Info</div>
       <div className='py-3 address'>
-        <span className='text-gray-400 pointer'><KeyboardDoubleArrowRightIcon/> Home</span>
-        <span className='text-gray-400 pointer'><KeyboardDoubleArrowRightIcon/> About Us</span>
-        <span className='text-gray-400 pointer'><KeyboardDoubleArrowRightIcon/> Shop Location</span>
-        <span className='text-gray-400 pointer'><KeyboardDoubleArrowRightIcon/> Contact</span>
+        <span className='text-gray-400 pointer' onClick={()=>navigate('/Sensor-TS/')}><KeyboardDoubleArrowRightIcon/> Home</span>
+        <span className='text-gray-400 pointer' onClick={()=>navigate('/Sensor-TS/about')}><KeyboardDoubleArrowRightIcon/> About Us</span>
+        <span className='text-gray-400 pointer' onClick={()=>navigate('/Sensor-TS/retail-projects')}><KeyboardDoubleArrowRightIcon/> Our Project And Solutions</span>
+        <span className='text-gray-400 pointer' onClick={()=>navigate('/Sensor-TS/contact')}><KeyboardDoubleArrowRightIcon/> Contact</span>
         </div>
       </Grid>
       </Grid>
-    <Grid container className='second'>
+    {/* <Grid container className='second'>
       <Grid item md={4} sm={12} xs={12} className='icons py-3'>
         <a href='#' className='border r-border p-2'><AiFillInstagram  className='fs_20'/></a>
         <a href='#' className='border r-border p-2 ms-4'><BsFacebook className='fs_20'/></a>
         <a href='#' className='border r-border p-2 ms-4'><BsTwitter className='fs_20'/></a>
       </Grid>
      
-    </Grid>
+    </Grid> */}
     </div>
     <Grid container className='bg-gray-950 bottom'>
      <span className='text_gray'>Copyright &nbsp; <BiCopyright/> &nbsp;2023 Sensor Tech Solutions </span>
