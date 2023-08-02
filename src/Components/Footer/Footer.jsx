@@ -35,7 +35,7 @@ export default function Footer() {
         <span className='text-gray-400 pointer'><KeyboardDoubleArrowRightIcon/> Belts</span>
         </div>
       </Grid> */}
-      <Grid item md={4} sm={6} xs={6}className='px-2'>
+      <Grid item md={4} sm={12} xs={12}className='px-2'>
       <div className='main_heading2 py-3'>Further Info</div>
       <div className='py-3 address'>
         <span className='text-gray-400 pointer' onClick={()=>navigate('/Sensor-TS/')}><KeyboardDoubleArrowRightIcon/> Home</span>
