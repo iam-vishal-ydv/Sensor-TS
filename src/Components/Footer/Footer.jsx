@@ -40,7 +40,7 @@ export default function Footer() {
       <div className='py-3 address'>
         <span className='text-gray-400 pointer' onClick={()=>navigate('/Sensor-TS/')}><KeyboardDoubleArrowRightIcon/> Home</span>
         <span className='text-gray-400 pointer' onClick={()=>navigate('/Sensor-TS/about')}><KeyboardDoubleArrowRightIcon/> About Us</span>
-        <span className='text-gray-400 pointer' onClick={()=>navigate('/Sensor-TS/retail-projects')}><KeyboardDoubleArrowRightIcon/> Our Project And Solutions</span>
+        <span className='text-gray-400 pointer' onClick={()=>navigate('/Sensor-TS/retail-projects')}><KeyboardDoubleArrowRightIcon/> Our Product And Solutions</span>
         <span className='text-gray-400 pointer' onClick={()=>navigate('/Sensor-TS/contact')}><KeyboardDoubleArrowRightIcon/> Contact</span>
         </div>
       </Grid>
@@ -55,7 +55,7 @@ export default function Footer() {
     </Grid> */}
     </div>
     <Grid container className='bg-gray-950 bottom'>
-     <span className='text_gray'>Copyright &nbsp; <BiCopyright/> &nbsp;2023 Sensor Tech Solutions </span>
+     <span className='text_gray'>Copyright &nbsp; <BiCopyright/> &nbsp;2023 Hyper Retail</span>
     </Grid>
     </>
   )

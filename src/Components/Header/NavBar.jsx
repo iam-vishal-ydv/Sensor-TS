@@ -53,7 +53,7 @@ const NavBar = ({alert}) => {
     {
       id: 3,
       links: "/Sensor-TS/retail-projects",
-      name: "Retail Projects",
+      name: "Our Product",
     },
   
     {
