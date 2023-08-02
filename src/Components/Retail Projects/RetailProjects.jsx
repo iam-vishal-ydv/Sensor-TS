@@ -64,7 +64,7 @@ export const Cards = ({ image, name, infoAbout }) => {
         <div data-aos="fade-up"
             data-aos-anchor-placement="center-bottom" class="max-w-sm bg-white  lg:w-72  shadow-md   cursor-pointer     border border-gray-200 rounded-md ">
             <a href="#">
-                <img class="rounded-t-lg  h-60 w-full " src={image} alt="" />
+                <img class="rounded-t-lg  h-60 w-96 bg-cover " src={image} alt="" />
             </a>
             <div className="p-5">
                 <a >
