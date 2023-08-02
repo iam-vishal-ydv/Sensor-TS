@@ -21,7 +21,7 @@ export default function OurSolutions({data}) {
 
 
 
-    <div className='  flex  flex-wrap  gap-9 w-[90%]  mx-auto  mt-7     justify-center '>
+    <div className='  flex  flex-wrap  gap-9 w-full  mx-auto  mt-7     justify-center '>
 
         {data.map((item) => {
 
