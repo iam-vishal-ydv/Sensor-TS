@@ -102,7 +102,7 @@ export default function Home({ setAlert }) {
         <Grid item md={6} sm={12} xs={12} className="pt-28" style={{ position: 'relative', padding: '8% 5%' }}>
           <div className="container_text_heading">Start Bussines With <br />Us</div>
           <div className="container_text text-gray-800">We deals in Supermarket display racks, Apparels display racks, Vegetable racks, MDF shelves racks, Italian top cash counter, Nut bolts less slotted angle racks and may more in partner with Star Interior PVT LTD. <br/><br/> We work and supply pan India and have office in Delhi/NCR, Patna, Durgapur, Raipur, Secundrabad, Hyderabad.</div>
-          <button className="btn5" onClick={() => navigate('/Sensor-TS/contact')}>Contact us</button>
+          <button className="btn5" onClick={() => navigate('/contact')}>Contact us</button>
           <img src={Oval1} className="oval1" />
           <img src={Oval2} className="oval2" />
         </Grid>
