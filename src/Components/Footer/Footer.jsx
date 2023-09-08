@@ -38,10 +38,10 @@ export default function Footer() {
       <Grid item md={4} sm={12} xs={12}className='px-2'>
       <div className='main_heading2 py-3'>Further Info</div>
       <div className='py-3 address'>
-        <span className='text-gray-400 pointer' onClick={()=>navigate('/Sensor-TS/')}><KeyboardDoubleArrowRightIcon/> Home</span>
-        <span className='text-gray-400 pointer' onClick={()=>navigate('/Sensor-TS/about')}><KeyboardDoubleArrowRightIcon/> About Us</span>
-        <span className='text-gray-400 pointer' onClick={()=>navigate('/Sensor-TS/retail-projects')}><KeyboardDoubleArrowRightIcon/> Our Product And Solutions</span>
-        <span className='text-gray-400 pointer' onClick={()=>navigate('/Sensor-TS/contact')}><KeyboardDoubleArrowRightIcon/> Contact</span>
+        <span className='text-gray-400 pointer' onClick={()=>navigate('/')}><KeyboardDoubleArrowRightIcon/> Home</span>
+        <span className='text-gray-400 pointer' onClick={()=>navigate('/about')}><KeyboardDoubleArrowRightIcon/> About Us</span>
+        <span className='text-gray-400 pointer' onClick={()=>navigate('/retail-projects')}><KeyboardDoubleArrowRightIcon/> Our Product And Solutions</span>
+        <span className='text-gray-400 pointer' onClick={()=>navigate('/contact')}><KeyboardDoubleArrowRightIcon/> Contact</span>
         </div>
       </Grid>
       </Grid>

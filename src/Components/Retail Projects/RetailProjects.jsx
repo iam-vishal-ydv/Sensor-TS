@@ -16,7 +16,7 @@ export default function SingleProject({ data }) {
     return (
         <>
             <a href="https://api.whatsapp.com/send?phone=919717689571&text=Hello Varun" className="whatsapp"><WhatsAppIcon id='whatsapp' /></a>
-            <div className=' pt-3 path'><Link className='text-xl text-gray-600' to='/Sensor-TS/'>Home</Link>&nbsp;&nbsp; <ArrowForwardIosIcon sx={{ fontSize: '18px' }} />&nbsp;&nbsp;<Link className='text-xl text-gray-600' to='/Sensor-TS/retail-projects'>Retail Projects</Link> </div>
+            <div className=' pt-3 path'><Link className='text-xl text-gray-600' to='/'>Home</Link>&nbsp;&nbsp; <ArrowForwardIosIcon sx={{ fontSize: '18px' }} />&nbsp;&nbsp;<Link className='text-xl text-gray-600' to='/retail-projects'>Retail Projects</Link> </div>
             <a href="tel:+919717689571" className="call"><CallIcon /></a>
 
 
@@ -76,7 +76,7 @@ export const Cards = ({ image, name, infoAbout }) => {
  
   </a> */}
 
-                <span  class="relative inline-flex items-center justify-center px-5 py-2 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group" onClick={()=>navigate(`/Sensor-TS/contact`)}>
+                <span  class="relative inline-flex items-center justify-center px-5 py-2 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group" onClick={()=>navigate(`/contact`)}>
                     <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-red-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
                     <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
                     <span class="relative"> Contact For More Info</span>
@@ -108,17 +108,17 @@ export const Cards = ({ image, name, infoAbout }) => {
 //     const navigate = useNavigate()
 //   return (
 //     <>
-//     <div className=' pt-3 path'><Link className='text-xl text-gray-600' to='/Sensor-TS/'>Home</Link>&nbsp;&nbsp; <ArrowForwardIosIcon sx={{fontSize:'18px'}}/>&nbsp;&nbsp; <span className='text-xl text-gray-700'>Retail Projects</span></div>
+//     <div className=' pt-3 path'><Link className='text-xl text-gray-600' to='/'>Home</Link>&nbsp;&nbsp; <ArrowForwardIosIcon sx={{fontSize:'18px'}}/>&nbsp;&nbsp; <span className='text-xl text-gray-700'>Retail Projects</span></div>
 //     <div className='ps-11 text-center pt-3' style={{fontSize:'30px',fontWeight:'600'}}>Click to See</div>
 //     <Grid container py={5} px={2} className='retail-container'>
 //         <Grid item md={4} sm={4} xs={12} pb={2} className='box-container'>
-//          <div className='project_box' onClick={()=>navigate('/Sensor-TS/retail-projects/singleproject/Racks')}>Racks</div>
+//          <div className='project_box' onClick={()=>navigate('/retail-projects/singleproject/Racks')}>Racks</div>
 //         </Grid>
 //         <Grid item md={4} sm={4} xs={12} pb={2} className='box-container'>
-//         <div className='project_box' onClick={()=>navigate('/Sensor-TS/retail-projects/singleproject/POS')}>POS</div>
+//         <div className='project_box' onClick={()=>navigate('/retail-projects/singleproject/POS')}>POS</div>
 //         </Grid>
 //         <Grid item md={4} sm={4} xs={12} pb={2} className='box-container'>
-//         <div className='project_box' onClick={()=>navigate('/Sensor-TS/retail-projects/singleproject/EAS')}>EAS</div>
+//         <div className='project_box' onClick={()=>navigate('/retail-projects/singleproject/EAS')}>EAS</div>
 //         </Grid>
 //     </Grid>
 //     <div className='contact_container'>

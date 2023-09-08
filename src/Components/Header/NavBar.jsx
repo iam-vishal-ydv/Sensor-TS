@@ -42,23 +42,23 @@ const NavBar = ({alert}) => {
   const links = [
     {
       id: 1,
-      links: "/Sensor-TS/",
+      links: "/",
       name: "Home",
     },
     {
       id: 2,
-      links: "/Sensor-TS/about",
+      links: "/about",
       name: "About Us",
     },
     {
       id: 3,
-      links: "/Sensor-TS/retail-projects",
+      links: "/retail-projects",
       name: "Our Product",
     },
   
     {
       id: 5,
-      links: "/Sensor-TS/contact",
+      links: "/contact",
       name: "Contact Us",
     },
   ];
@@ -67,7 +67,7 @@ const NavBar = ({alert}) => {
     <>
       <div className="flex z-50  px-10  justify-between items-center w-full h-20  text-black bg-gray-100 sticky top-0">
        <div className="w-20">
-           <img  src={logo} className="logo bg-black " onClick={()=>navigate('/Sensor-TS/')} alt="logo"/>
+           <img  src={logo} className="logo bg-black " onClick={()=>navigate('/')} alt="logo"/>
            </div>
 
         <ul className="hidden md:flex ">
